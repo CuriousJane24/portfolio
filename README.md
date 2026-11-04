@@ -1,22 +1,3 @@
-<!-- JANET'S CUSTOMER SUCCESS PORTFOLIO -->
-
-<div align="center">
-
-# JANET | CUSTOMER SUCCESS & CRM
-
-### Customer Success in Practice.
-
-**Turning customer challenges into structured processes,
-better experiences and measurable outcomes.**
-
-[View Projects](#featured-projects) ·
-[About My Work](#about-my-work) ·
-[Contact Me](#contact)
-
-</div>
-
----
-
 ## ABOUT MY WORK
 
 I work at the intersection of Customer Success, CRM and
@@ -117,7 +98,7 @@ fashion order, a fitting issue and an urgent replacement.
 - Coordinated a replacement within 48–72 hours.
 - Managed communication and express delivery.
 - Delivered a replacement that fitted the customer.
-- Improved Fit complaintsfrom 75% to 20% in 90days
+- Reduced Fit complaints from 75% to 20% in 90days
 
 ![Customer Experience](images/founder/project-cover.png)
 
@@ -148,9 +129,9 @@ Open to opportunities and collaborations in:
 - Onboarding & Implementation
 - Account Management
 
-**LinkedIn:** [ https://www.linkedin.com/in/janet-crm-specialist]
+**LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/janet-crm-specialist )
 
-**Email:** [janetdigitalwitch@gmail.com]
+**Email:** [ Work Email ](janetdigitalwitch@gmail.com)
 
 **GitHub:** [Explore my work](YOUR_GITHUB_URL)
 
