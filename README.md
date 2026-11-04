@@ -127,9 +127,7 @@ Open to opportunities and collaborations in:
 - Account Management
 
 **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/janet-crm-specialist )
-</div>
 **Email:** [ Work Email ](janetdigitalwitch@gmail.com)
-</div>
 **GitHub:** [Explore my work](YOUR_GITHUB_URL)
 
 ---
