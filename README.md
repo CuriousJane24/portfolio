@@ -148,9 +148,9 @@ Open to opportunities and collaborations in:
 - Onboarding & Implementation
 - Account Management
 
-**LinkedIn:** [Connect with https://www.linkedin.com/in/janet-crm-specialist
+**LinkedIn:** [ https://www.linkedin.com/in/janet-crm-specialist]
 
-**Email:** janetdigitalwitch@gmail.com
+**Email:** [janetdigitalwitch@gmail.com]
 
 **GitHub:** [Explore my work](YOUR_GITHUB_URL)
 
