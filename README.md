@@ -15,7 +15,7 @@ CRM implementations and Customer Experience projects.
 
 ### 01. CUSTOMER ONBOARDING & TIME-TO-VALUE
 
-**MindTrack | B2B Onboarding**
+**MindTrack — B2B Onboarding**
 
 How I approached reducing onboarding drop-off through
 a structured customer onboarding journey.
@@ -33,7 +33,7 @@ a structured customer onboarding journey.
 
 ### 02. CUSTOMER ADOPTION & ENGAGEMENT
 
-**Ihuoma Fashion House | Product Adoption**
+**Ihuoma Fashion House — Product Adoption**
 
 Investigating why customers were not adopting a product
 feature and how customer education could improve usage.
@@ -51,7 +51,7 @@ feature and how customer education could improve usage.
 
 ### 03. CUSTOMER HEALTH & RETENTION
 
-**BukkiBooks | Customer Health Monitoring**
+**BukkiBooks — Customer Health Monitoring**
 
 Designing a framework to identify disengaged customers
 and detect potential retention risks.
@@ -69,7 +69,7 @@ and detect potential retention risks.
 
 ### 04. CRM ADMINISTRATION & AUTOMATION
 
-**HubSpot | CRM Management & Lifecycle Automation**
+**HubSpot|CRM Management & Lifecycle Automation**
 
 Organising customer data and building structured CRM
 processes.
@@ -127,7 +127,9 @@ Open to opportunities and collaborations in:
 - Account Management
 
 **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/janet-crm-specialist )
+
 **Email:** [ Work Email ](janetdigitalwitch@gmail.com)
+
 **GitHub:** [Explore my work](YOUR_GITHUB_URL)
 
 ---
