@@ -1,9 +1,7 @@
 ## ABOUT MY WORK
 
 I work at the intersection of Customer Success, CRM and
-Operations.
-
-My focus is understanding where customers experience
+Operations. My focus is understanding where customers experience
 friction, identifying gaps in their journey and designing
 processes that improve onboarding, product adoption,
 engagement and retention.
@@ -108,11 +106,10 @@ fashion order, a fitting issue and an urgent replacement.
 
 ## MY APPROACH
 
-**Understand → Investigate → Strategise → Implement → Measure**
+**Understand — Investigate — Strategise — Implement — Measure**
 
 I believe effective Customer Success goes beyond
 responding to customer complaints.
-
 It requires understanding customer behaviour,
 identifying friction early and building processes that
 help customers achieve their desired outcomes.
@@ -130,9 +127,9 @@ Open to opportunities and collaborations in:
 - Account Management
 
 **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/janet-crm-specialist )
-
+</div>
 **Email:** [ Work Email ](janetdigitalwitch@gmail.com)
-
+</div>
 **GitHub:** [Explore my work](YOUR_GITHUB_URL)
 
 ---
