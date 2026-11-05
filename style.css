@@ -9,3 +9,11 @@ body {
 h1 {
   color: #A94316;
 }
+.intro {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  background-color: #FFFFFF;
+  border-top: 4px solid #A94316;
+  border-radius: 12px;
+}
