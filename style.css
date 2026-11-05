@@ -32,3 +32,13 @@ h1 {
   outline: 2px solid #3B2418;
   outline-offset: 3px;
 }
+main {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+h2 {
+  color: #3B2418;
+  font-size: 28px;
+}
