@@ -17,3 +17,18 @@ h1 {
   border-top: 4px solid #A94316;
   border-radius: 12px;
 }
+.button {
+  display: inline-block;
+  background-color: #A94316;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: #3B2418;
+  outline: 2px solid #3B2418;
+  outline-offset: 3px;
+}
