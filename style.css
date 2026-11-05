@@ -127,3 +127,6 @@ h2 {
     margin-bottom: 0;
   }
 }
+.project-card + .project-card {
+  margin-top: 24px;
+}
