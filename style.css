@@ -64,3 +64,12 @@ h2 {
 .case-study li {
   margin-bottom: 12px;
 }
+
+.profile-photo {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
