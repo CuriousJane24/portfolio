@@ -53,3 +53,14 @@ h2 {
   color: #A94316;
   margin-top: 0;
 }
+.case-study {
+  max-width: 760px;
+}
+
+.case-study section {
+  margin-top: 32px;
+}
+
+.case-study li {
+  margin-bottom: 12px;
+}
