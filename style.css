@@ -130,3 +130,25 @@ h2 {
 .project-card + .project-card {
   margin-top: 24px;
 }
+.project-evidence {
+  margin: 24px 0;
+}
+
+.project-evidence img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #E6D5C5;
+  border-radius: 8px;
+}
+
+.project-evidence figcaption {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.project-evidence a:focus-visible {
+  display: block;
+  outline: 3px solid #A94316;
+  outline-offset: 4px;
+}
