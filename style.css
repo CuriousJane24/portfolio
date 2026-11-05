@@ -152,3 +152,20 @@ h2 {
   outline: 3px solid #A94316;
   outline-offset: 4px;
 }
+#contact {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid #E6D5C5;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-links a:not(.button) {
+  color: #A94316;
+  text-underline-offset: 4px;
+}
