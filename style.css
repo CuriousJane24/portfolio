@@ -294,6 +294,87 @@ h2 {
   border-radius: 12px;
   min-width: 0;
 }
+/* ==========================================================================
+   🛠️ MARQUEE ANIMATION FOR WORK TOOLS
+   ========================================================================== */
+
+.tools-section {
+  padding: 60px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hide parts moving outside the screen margins */
+.tools-window {
+  width: 100%;
+  overflow: hidden; 
+  position: relative;
+  padding: 20px 0;
+  background: var(--bg-slate);
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+}
+
+/* The actual running ribbon */
+.tools-track {
+  display: flex;
+  gap: 40px;
+  width: max-content; /* Ensure items don't squash into a stack */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  /* Link the movement keyframe below to run smoothly and infinitely */
+  animation: marqueeContinuous 25s linear infinite; 
+}
+
+/* Pause the sliding marquee whenever a user hovers over it */
+.tools-window:hover .tools-track {
+  animation-play-state: paused;
+}
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0; /* Stop elements from buckling on small layouts */
+}
+
+.tool-item img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.tool-item span {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.tool-learning {
+  font-size: 0.75rem;
+  color: var(--hubspot-orange);
+  background: #FFEFEA;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+/* 🔄 The Infinite Looping Keyframes */
+@keyframes marqueeContinuous {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Slides exactly halfway out before smoothly looping back to index 0 */
+    transform: translateX(-50%); 
+  }
+}
 
 .tools-section h2 {
   margin-top: 0;
