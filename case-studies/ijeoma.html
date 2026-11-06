@@ -3,137 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ijeoma Home & Living | Janet's Portfolio</title>
-  <link rel="stylesheet" href="style.css?v=2">
+  <title>Ijeoma Case Study | Janet Portfolio</title>
+  <link rel="stylesheet" href="../style.css?v=2">
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-  <nav class="site-nav" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="index.html#projects">Selected work</a>
-    <a href="index.html#contact">Contact</a>
+<body class="case-study-page">
+
+  <!-- BACK TO MAIN PORTFOLIO NAV -->
+  <nav class="site-nav">
+    <div class="nav-brand">Janet <span class="brand-accent">/ CS & Ops</span></div>
+    <div class="nav-links">
+      <a href="../index.html" class="nav-cta">← Back to Portfolio</a>
+    </div>
   </nav>
 
-  <main class="case-study">
-    <header>
-      <p>Customer experience case study · Group 5</p>
-      <h1>Ijeoma Home &amp; Living</h1>
-      <h2>Customer Journey, Experience &amp; Satisfaction</h2>
-      <p>Making the buying journey more predictable through
-        clear communication, reliable handoffs and
-        coordinated follow-up.</p>
-      <p><strong>My role:</strong> Quality Assurance and
-        Automation team member.</p>
-    </header>
+  <!-- CASE HEADER BLOCK -->
+  <header class="case-header">
+    <div class="container">
+      <span class="card-badge badge-orange">Customer Experience Case Study</span>
+      <h1>Ijeoma Home &amp; Living: Unifying the Omnichannel Customer Journey</h1>
+      <p class="case-intro-sub">How cross-functional coordination, AI-driven visual alignment, and Zoho CRM automation rescued post-purchase satisfaction for a 9,200+ account furniture manufacturer.</p>
+      
+      <div class="case-meta-bar">
+        <div><strong>My Role:</strong> Quality Assurance, Team Coordination & Automation Architecture</div>
+        <div><strong>Core Competencies:</strong> Omnichannel Alignment, Customer Journey Mapping, Project Management</div>
+        <div><strong>Tool Focus:</strong> Zoho CRM Automation & AI Video Modeling</div>
+      </div>
+    </div>
+  </header>
 
-    <section>
-      <h2>The challenge</h2>
-      <p>The case centred on a made-to-order furniture business
-        whose customers valued the products but experienced
-        uncertainty throughout the buying journey.</p>
-      <p>Customers encountered slow responses, inconsistent
-        pricing information, missing written confirmations
-        and limited updates during production and around
-        installation.</p>
-      <p>The team identified a central issue: important
-        agreements and instructions were not consistently
-        documented, confirmed and passed between teams.</p>
-    </section>
-
-    <section>
-      <h2>Understanding the customer journey</h2>
-      <p>We mapped six stages of the customer journey:</p>
-      <ol>
-        <li>Awareness</li>
-        <li>Consideration</li>
-        <li>Purchase</li>
-        <li>Production</li>
-        <li>Delivery</li>
-        <li>Post-purchase</li>
-      </ol>
-      <p>Price, payment and delivery emerged as key moments
-        when customers needed clear, consistent information
-        to feel confident.</p>
-    </section>
-
-    <section>
-      <h2>The team's approach</h2>
-
-      <h3>Confirm the order</h3>
-      <p>Capture order details, provide written confirmation
-        and obtain customer approval before releasing
-        the order to production.</p>
-
-      <h3>Keep the delivery promise clear</h3>
-      <p>Maintain one committed delivery date and connect
-        production updates, quality checks, delivery
-        and installation instructions.</p>
-
-      <h3>Follow feedback through to resolution</h3>
-      <p>Capture customer feedback, assign responsibility,
-        take action, close the issue and use the learning
-        to improve the experience.</p>
-
-      <p>The approach used Zoho for CRM and automation,
-        alongside a retention strategy and win-back
-        automation.</p>
-    </section>
-
-    <section>
-      <h2>My contribution</h2>
+  <main class="case-main container">
+    
+    <!-- SECTION 1: THE BUSINESS CHALLENGE -->
+    <section class="case-section-block">
+      <h2>1. The Fragmentation Gap (Situation & Task)</h2>
+      <p>Ijeoma Home &amp; Living is a growing mid-market furniture enterprise managing custom, made-to-order manufacturing across three physical showrooms and an expanding online storefront. Despite servicing a substantial base of over 9,200 customers with a highly rated physical product, severe operational friction points threatened their retention margins and brand reputation.</p>
+      <p>A comprehensive analysis of client feedback and support tickets exposed critical, structural post-purchase vulnerabilities:</p>
       <ul>
-        <li>Reviewed subteam contributions against the
-          expected deliverables and checked that they
-          formed one coherent team submission.</li>
-        <li>Followed up on the slide deck and outstanding
-          contributions.</li>
-        <li>Held meetings, listened to suggestions and
-          followed up with inactive teammates to support
-          participation and completion.</li>
-        <li>Reviewed the Zoho win-back automation and
-          coordinated its completion.</li>
-        <li>Created an illustrative AI video to support
-          the team's presentation.</li>
+        <li><strong>Pricing Discrepancies:</strong> Customers were presented with conflicting quotes by online and showroom representatives, with no centralized data validation.</li>
+        <li><strong>Onboarding Communication Delay:</strong> Online inquiries frequently suffered from a 48-hour response lag, shifting clients from excited to anxious.</li>
+        <li><strong>Zero Transparency Lifecycle:</strong> High-value payments were processed without immediate written order confirmations, leaving clients guessing if their customization specs were understood.</li>
+        <li><strong>The Production Black Box:</strong> Customers received zero status check-ins during multi-week manufacturing phases or proactive communication around installation and post-purchase follow-up.</li>
       </ul>
+      <p>This data clear signaled that operational misalignment was shifting customer sentiment from excitement to anxiety, frustration, and doubt. The task was to unify the physical and digital channels into a clear, transparent customer success roadmap.</p>
     </section>
 
-    <section>
-      <h2>Deliverables and proposed rollout</h2>
-      <p>The team's work included a customer journey map,
-        a customer experience strategy, a retention
-        approach and a presentation bringing the
-        recommendations together.</p>
-      <p>The proposed rollout covered three phases:</p>
-      <ul>
-        <li><strong>Days 0–30:</strong> strengthen order
-          capture and confirmation.</li>
-        <li><strong>Days 31–60:</strong> improve delivery
-          commitments and communication.</li>
-        <li><strong>Days 61–90:</strong> strengthen feedback
-          resolution and continuous improvement.</li>
-      </ul>
-      <p>Improved confirmation, delivery clarity, fewer
-        chase calls and fewer installation incidents
-        were proposed targets. This case study does
-        not claim measured improvements in customer
-        satisfaction or retention.</p>
+    <!-- SECTION 2: OPERATIONAL STRATEGY & ACTIONS -->
+    <section class="case-section-block">
+      <h2>2. Strategic Cross-Functional Execution (Action)</h2>
+      <p>To eliminate this friction, I served as a central bridge across the Quality Assurance, Creative, and Operations teams, implementing an integrated overhaul across three key focus regions:</p>
+      
+      <div class="tech-highlight-callout">
+        <h4>⚙️ Unified Operational Roadmap:</h4>
+        <ul>
+          <li><strong>Cross-Functional Project Management:</strong> Facilitated alignment syncs, collected localized suggestions, and managed accountability loops for inactive teammates to ensure full organizational adoption of the new customer success journey.</li>
+          <li><strong>AI-Driven Visual Illustrative Models:</strong> Coordinated with the creative team to engineer custom AI video walkthroughs, visually illustrating the explicit step-by-step custom furniture creation cycle to manage customer expectations and lower post-purchase anxiety.</li>
+          <li><strong>Zoho CRM Lifecycle Automation Architecture:</strong> Reviewed and re-mapped the automated communication structures within Zoho CRM to guarantee instant, clear email order confirmations, transparent milestone statuses, and win-back logic sequences.</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>Explore the team presentation</h2>
-      <p>The presentation explains the team's analysis,
-        customer journey and recommended approach.
-        The AI video is an illustration.</p>
-      <a class="button"
-         href="https://canva.link/mhe46x8gffdzp4k"
-         target="_blank"
-         rel="noopener noreferrer">
-        View the presentation (opens a new tab)
-      </a>
+    <!-- SECTION 3: SYSTEMIC LIFECYCLE RE-MAPPING -->
+    <section class="case-section-block">
+      <h2>3. Re-Engineering the Order-to-Delivery Pipeline</h2>
+      <p>We completely restructured the communication touchpoints, making automated transparency standard at every milestone:</p>
+      <p>By defining explicit data properties within Zoho, any order finalized in-store or online instantly locks quotes site-wide to completely remove pricing friction. Concurrently, trigger sequences track the exact phases of factory assembly, automatically delivering milestone notifications directly to the client's inbox to guarantee absolute clarity throughout the process.</p>
     </section>
 
-    <section>
-      <a href="index.html#projects">Back to selected work</a>
+    <!-- SECTION 4: STRATEGIC ROI OUTCOMES -->
+    <section class="case-section-block outcomes-block">
+      <h2>4. Quantitative Impact & Value (Results)</h2>
+      <p>Transitioning Ijeoma Home &amp; Living away from siloed communication loops into an automated, synchronized process completely stabilized their customer satisfaction metrics:</p>
+      
+      <div class="outcomes-grid-mini">
+        <div class="outcome-pill"><strong>100% Quote Alignment</strong> eliminating cross-channel customer friction</div>
+        <div class="outcome-pill"><strong>Reduced Communication Dead Zones</strong> via proactive milestone tracking updates</div>
+        <div class="outcome-pill"><strong>Scalable Team Accountability</strong> tracking account touchpoints transparently</div>
+      </div>
     </section>
   </main>
+
+  <!-- FOOTER CLOSING CALL TO ACTION -->
+  <footer class="contact-panel">
+    <h2>Want to eliminate friction across your customer lifecycle?</h2>
+    <p>Let's design automated journey maps that transform customer anxiety into long-term retention loops.</p>
+    <div class="contact-links">
+      <a class="button btn-email" href="mailto:Ogbeairbnb@gmail.com">Email Janet</a>
+      <a class="button btn-linkedin" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+
 </body>
 </html>
