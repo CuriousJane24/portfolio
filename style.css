@@ -289,3 +289,7 @@ h2 {
     padding: 16px;
   }
 }
+.tool-item small {
+  display: block;
+  margin-top: 4px;
+}
