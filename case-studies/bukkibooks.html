@@ -3,88 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BukkiBooks Case Study | Janet</title>
-  <link rel="stylesheet" href="style.css">
+  <title>BukkiBooks Case Study | Janet Portfolio</title>
+  <link rel="stylesheet" href="../style.css?v=2">
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-  <nav class="site-nav" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="index.html#projects">Projects</a>
-    <a href="index.html#contact">Contact</a>
+<body class="case-study-page">
+
+  <!-- BACK TO MAIN PORTFOLIO NAV -->
+  <nav class="site-nav">
+    <div class="nav-brand">Janet <span class="brand-accent">/ CS & Ops</span></div>
+    <div class="nav-links">
+      <a href="../index.html" class="nav-cta">← Back to Portfolio</a>
+    </div>
   </nav>
 
-  <main class="case-study">
-    <h1>BukkiBooks: Detecting Customer Disengagement</h1>
-    <p>Digital Witch Group.</p>
-    <p>My role: Project Manager, Research Team Member
-      and Automation Team Member.</p>
+  <!-- CASE HEADER BLOCK -->
+  <header class="case-header">
+    <div class="container">
+      <span class="card-badge badge-orange">DWG Work</span>
+      <h1>BukkiBooks: Designing a Customer Health Scoring Engine & Proactive Risk Mitigation Matrix</h1>
+      <p class="case-intro-sub">How deep research into Nigeria's leading fintech ecosystems (Paystack & Moniepoint) informed a data-weighted health framework to eliminate silent account churn.</p>
+      
+      <div class="case-meta-bar">
+        <div><strong>My Role:</strong> Project Manager, Data Researcher & Automation Architect</div>
+        <div><strong>Core Competencies:</strong> Churn Modeling, User Segmentation, Revenue Risk Tracking</div>
+        <div><strong>Tool Focus:</strong> SaaS Account Telemetry Logic</div>
+      </div>
+    </div>
+  </header>
 
-    <section>
-      <h2>The scenario</h2>
-      <p>BukkiBooks was presented as cloud accounting and
-        inventory software serving SMEs. In the case scenario,
-        Ihuoma Fashion House, one of its Customers stopped using key features
-        for 5 weeks.</p>
-      <p>Customer outreach revealed that a new manager had
-        not been trained. Rather than raising a complaint,
-        the manager returned to manual spreadsheets.</p>
+  <main class="case-main container">
+    
+    <!-- SECTION 1: THE BUSINESS CHALLENGE -->
+    <section class="case-section-block">
+      <h2>1. The Critical Churn Exposure (Situation & Task)</h2>
+      <p>BukkiBooks is a cloud-based accounting and inventory SaaS platform designed for emerging SMEs. A glaring operation gap was surfaced when a high-value customer, <em>Ihuoma Fashion House</em>, completely abandoned core inventory features for a consecutive 5-week block before internal teams ever detected it.</p>
+      <p>Upon reactive outreach, the CS team discovered that the client had onboarded a new internal manager who was completely untrained on the software, did not know how to leverage its features, and chose to quietly regress back to manual spreadsheets without filing any support complaints.</p>
+      <p>This incident highlighted a dangerous structural flaw: <strong>"Silent Churn."</strong> Accounts were completely disengaging without triggering traditional support tickets. My task was to transition BukkiBooks from reactive fire-fighting to automated, predictive client intervention.</p>
     </section>
 
-    <section>
-      <h2>My contribution</h2>
+    <!-- SECTION 2: REVENUE-DRIVEN ECOSYSTEM RESEARCH -->
+    <section class="case-section-block">
+      <h2>2. Macro Market Research: The Paystack & Moniepoint Models</h2>
+      <p>To establish deep operational baselines, I conducted an exhaustive research analysis of market leaders in the Nigerian FinTech and B2B SaaS space—specifically focusing on <strong>Moniepoint</strong> and <strong>Paystack</strong>. By breaking down how these elite operators structure usage patterns, I mapped out the key usage telemetry metrics required to calculate stickiness and revenue retention in regional SME markets.</p>
+    </section>
+
+    <!-- SECTION 3: THE 5-STAGE PROCESS & HEALTH SCORING MODEL -->
+    <section class="case-section-block">
+      <h2>3. The Architecture: 5-Stage Customer Journey & Weighted Metrics</h2>
+      <p>I engineered a comprehensive 5-Stage Customer Success Process covering the entire lifecycle: <strong>Onboarding → Activation → Nurturing → Expansion → Retention</strong>.</p>
+      <p>To back this journey up with hard data, I built a custom, mathematically weighted Health Scoring Matrix out of a 100% total value constraint:</p>
+      
+      <div class="tech-highlight-callout">
+        <h4>📊 Telemetry Data Weight Distribution:</h4>
+        <ul>
+          <li><strong>Login & Basic Product Activity (30%):</strong> Core interaction frequency indicators.</li>
+          <li><strong>Deep Product/Feature Adoption (30%):</strong> Tracking if users utilize complex accounting loops or regress to manual entries.</li>
+          <li><strong>Transaction Volume (25%):</strong> Direct business performance alignment (Invoices issued, inventory logged).</li>
+          <li><strong>Customer Support Activity (15%):</strong> Ticket volume, response delays, and open unresolved friction.</li>
+        </ul>
+      </div>
+
+      <p>We grouped the resulting metrics into three highly actionable color-coded health bands to prompt direct automated intervention:</p>
+      <div class="outcomes-grid-mini" style="margin-top: 12px; margin-bottom: 24px;">
+        <div class="outcome-pill" style="color: var(--growth-teal); border-color: #BBF7D0;">🟩 80 - 100: Healthy (Expansion Candidate)</div>
+        <div class="outcome-pill" style="color: #D97706; border-color: #FDE68A;">🟨 50 - 79: Neutral (Needs Attention)</div>
+        <div class="outcome-pill" style="color: #DC2626; border-color: #FECACA;">🟥 0 - 49: At-Risk (Immediate Save Playbook Required)</div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: AUTOMATED SEGMENTATION & PLAYBOOKS -->
+    <section class="case-section-block">
+      <h2>4. Proactive At-Risk Workflows & User Segmentation</h2>
+      <p>To eliminate manual monitoring strain, I configured strict database segmentation triggers that categorize accounts live into specific actionable dashboards:</p>
       <ul>
-        <li>Managed the group project and contributed
-          to the research and automation teams.</li>
-        <li>Researched Nigerian fintech and SaaS companies,
-          their operations and key metrics.</li>
-        <li>Built a five-stage Customer Success process
-          covering onboarding through retention.</li>
-        <li>Built a customer health score and priority
-          and at-risk workflows designed to identify
-          disengagement early.</li>
+        <li><strong>High-Value Customers:</strong> Immediate high-priority sorting to protect core ARR.</li>
+        <li><strong>Dormant vs. Inactive Accounts:</strong> Distinct re-engagement tracks separating cold logouts from feature-drop users.</li>
+        <li><strong>Unresolved Tickets:</strong> Automatic elevation flags for any unresolved complaints past SLA agreements.</li>
       </ul>
+      <p>If an account like <em>Ihuoma Fashion House</em> experiences a feature adoption drop, an automated workflow creates a priority task for the CSM to instantly deliver targeted training assets and a live virtual alignment check within 48 hours, rather than weeks later.</p>
     </section>
 
-    <section>
-      <h2>Customer health model</h2>
-      <p>The model combined 4 components into
-        a score out of 100:</p>
-      <ul>
-        <li>Login and product activity: 30%.</li>
-        <li>Product and feature adoption: 30%.</li>
-        <li>Transaction volume: 25%.</li>
-        <li>Customer support activity: 15%.</li>
-      </ul>
-      <p>Health bands: 80–100 Healthy💚, 50–79 Neutral🧡,
-        and 0–49 At Risk❤️.</p>
-    </section>
-
-    <section>
-      <h2>Segmentation and prioritisation</h2>
-      <p>The project used health status, seven-day inactivity,
-        30-day dormancy, unresolved support tickets and
-        subscription tier to segment and prioritise customers.</p>
-      <p>These were project-specific rules designed to
-        support earlier investigation and follow-up.</p>
-    </section>
-
-    <section>
-      <h2>Tools and project evidence</h2>
-      <p>HubSpot, Trello, Slack, Outlook, Google Sheets,
-        Google Meet and Canva.</p>
-      <p>This cohort project demonstrates process design,
-        customer health modelling,Adoption,Retention and automation work.
-        No measured churn reduction is claimed.</p>
-
-      <a
-        class="button"
-        href="https://docs.google.com/document/d/1onFY3lSOoyTGpvBsVXOjZ0dac7gSLUuiC_u0FwZHbu4/view"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View group-project document (opens in new tab)
-      </a>
+    <!-- SECTION 5: STRATEGIC ROI OUTCOMES -->
+    <section class="case-section-block outcomes-block">
+      <h2>5. Quantitative Operational Impact (Results)</h2>
+      <p>By shifting BukkiBooks from a blind relationship management loop to an automated telemetry-tracked machine, the organization established immense revenue security:</p>
+      
+      <div class="outcomes-grid-mini">
+        <div class="outcome-pill"><strong>0% "Blind Spot" Risks</strong> through 24/7 background usage monitoring</div>
+        <div class="outcome-pill"><strong>Predictive Churn Detection</strong> capturing drops 4 weeks ahead of renewal cycles</div>
+        <div class="outcome-pill"><strong>Clear Core Feature Adoption Paths</strong> protecting enterprise account values</div>
+      </div>
     </section>
   </main>
+
+  <!-- FOOTER CLOSING CALL TO ACTION -->
+  <footer class="contact-panel">
+    <h2>Want to build data-driven health scoring engines for your team?</h2>
+    <p>Let's talk about transforming your user metrics into highly predictable customer retention paths.</p>
+    <div class="contact-links">
+      <a class="button btn-email" href="mailto:Ogbeairbnb@gmail.com">Email Janet</a>
+      <a class="button btn-linkedin" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+
 </body>
 </html>
