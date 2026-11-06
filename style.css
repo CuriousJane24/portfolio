@@ -353,7 +353,7 @@ h2 {
 }
 
 .tools-window.is-animated .tools-track {
-  animation: tools-slide-right 60s linear infinite;
+  animation: tools-slide-right 30s linear infinite;
 }
 
 .tools-window.is-paused .tools-track {
@@ -399,4 +399,13 @@ h2 {
     display: none;
   }
 }
+/* Light-brown tool cards and metric boxes */
+.tool-item,
+.metric {
+  background-color: #EAD8C5;
+  border-color: #C9A889;
+}
 
+.metric dd {
+  color: #3B2418;
+}
