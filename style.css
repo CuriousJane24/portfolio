@@ -341,5 +341,62 @@ h2 {
   display: block;
   font-weight: bold;
 }
+#tools-toggle {
+  margin-bottom: 16px;
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+}
 
+#tools-toggle[hidden] {
+  display: none;
+}
+
+.tools-window.is-animated .tools-track {
+  animation: tools-slide-right 60s linear infinite;
+}
+
+.tools-window.is-paused .tools-track {
+  animation-play-state: paused;
+}
+
+@keyframes tools-slide-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.tools-window.is-animated {
+  overflow: hidden;
+}
+
+.tools-window.is-animated .tools-track {
+  gap: 0;
+}
+
+.tools-window.is-animated .tool-item {
+  margin-right: 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tools-window.is-animated .tools-track {
+    animation: none;
+    transform: none;
+  }
+
+  .tools-window.is-animated {
+    overflow-x: auto;
+  }
+
+  .tools-track .tool-copy {
+    display: none;
+  }
+
+  #tools-toggle {
+    display: none;
+  }
+}
 
