@@ -39,3 +39,34 @@ if (!reduceMotion && "IntersectionObserver" in window) {
 
   counters.forEach((counter) => observer.observe(counter));
 }
+const toolsWindow = document.querySelector(".tools-window");
+const toolsTrack = document.querySelector(".tools-track");
+const toolsToggle = document.querySelector("#tools-toggle");
+
+if (toolsWindow && toolsTrack && toolsToggle) {
+  const toolsMotionPreference = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  );
+
+  if (!toolsMotionPreference.matches) {
+    const originalTools = Array.from(toolsTrack.children);
+
+    originalTools.forEach((tool) => {
+      const copy = tool.cloneNode(true);
+      copy.classList.add("tool-copy");
+      copy.setAttribute("aria-hidden", "true");
+      toolsTrack.appendChild(copy);
+    });
+
+    toolsWindow.classList.add("is-animated");
+    toolsToggle.hidden = false;
+
+    toolsToggle.addEventListener("click", () => {
+      const paused = toolsWindow.classList.toggle("is-paused");
+
+      toolsToggle.textContent = paused
+        ? "Resume tool movement"
+        : "Pause tool movement";
+    });
+  }
+}
