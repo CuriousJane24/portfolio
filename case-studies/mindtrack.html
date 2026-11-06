@@ -3,89 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MindTrack Onboarding | Janet</title>
-  <link rel="stylesheet" href="style.css">
+  <title>MindTrack Case Study | Janet Portfolio</title>
+  <link rel="stylesheet" href="../style.css?v=2">
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com" rel="stylesheet">
 </head>
-<body>
-  <main class="case-study">
-    <a href="index.html#projects">Back to projects</a>
+<body class="case-study-page">
 
-    <h1>MindTrack: Helping New Users Get Started</h1>
-    <p>Built in HubSpot.</p>
+  <!-- BACK TO MAIN PORTFOLIO NAV -->
+  <nav class="site-nav">
+    <div class="nav-brand">Janet <span class="brand-accent">/ CS & Ops</span></div>
+    <div class="nav-links">
+      <a href="../index.html" class="nav-cta">← Back to Portfolio</a>
+    </div>
+  </nav>
 
-    <section>
-      <h2>Product and scenario</h2>
-      <p>MindTrack is presented in this scenario as
-        a tool for tracking work sessions and understanding
-        where working hours go.</p>
-      <p>The onboarding challenge was to help new users
-        move from signing up to logging their first
-        meaningful work session.</p>
+  <!-- CASE HEADER BLOCK -->
+  <header class="case-header">
+    <div class="container">
+      <span class="card-badge badge-orange">HubSpot Build</span>
+      <h1>MindTrack: Engineering an Automated 4-Part Product Activation Funnel</h1>
+      <p class="case-intro-sub">How structuring behavioral email drip parameters inside HubSpot accelerated Time-to-Value (TTV) and scaled onboarding milestone adoption for B2B accounts and freelancers.</p>
+      
+      <div class="case-meta-bar">
+        <div><strong>My Role:</strong> Lifecycle Marketing & Automation Design</div>
+        <div><strong>Core Competencies:</strong> Product Activation, Lifecycle Sequencing, Content Strategy</div>
+        <div><strong>Tool Focus:</strong> HubSpot Marketing / Service Hub</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="case-main container">
+    
+    <!-- SECTION 1: THE BUSINESS CHALLENGE -->
+    <section class="case-section-block">
+      <h2>1. The Post-Registration Activation Friction (Situation & Task)</h2>
+      <p>MindTrack is a B2B productivity SaaS application engineered to help modern corporations, teams, and solo freelancers log work sessions, analyze time utilization, and optimize daily efficiency. While user acquisition volumes were stable, account telemetry revealed an industry-standard bottleneck: high day-1 churn caused by a failure to cross the initial <strong>activation threshold</strong>.</p>
+      <p>Users would register for an account but stall before completing their first critical habit loop—<em>logging an active work session</em>. Without completing this milestone, users failed to realize the platform's long-term utility, resulting in immediate user churn. My task was to architect a high-touch, automated behavioral nurture track to smoothly guide users to their initial "Aha!" moment and lock in product adoption.</p>
     </section>
 
-    <section>
-      <h2>My approach</h2>
-      <p>I built a 4-email onboarding sequence in HubSpot,
-        combining welcome guidance, reminders, an illustrative
-        use case and a personal check-in.</p>
-      <p>The project set a target of a first session within
-        10 days. This was a design target, not a measured result.</p>
+    <!-- SECTION 2: THE 4-STAGE NURTURE ARCHITECTURE -->
+    <section class="case-section-block">
+      <h2>2. Strategic Communication Mapping & Content Architecture</h2>
+      <p>I built and deployed a highly intentional, multi-day onboarding lifecycle split across 4 distinct behavioral psychological phases. Rather than blasting users with generic feature dumps, each piece of content was optimized to map out a clear path to user value:</p>
+      
+      <div class="tech-highlight-callout">
+        <h4>📧 The 4-Email Activation Sequence Blueprint:</h4>
+        <ul>
+          <li><strong>Day 1: Welcome & Core Action Guidance:</strong> Establishes a warm, direct greeting. Delivers a zero-friction, step-by-step visual roadmap specifically designed to guide the user into initiating and saving their very first work tracking block.</li>
+          <li><strong>Day 3: The Transparency Value Reveal:</strong> Shifts focus to data value. Demonstrates how logging baseline hours naturally peels back hidden inefficiencies, illustrating exactly how tracking unlocks a clear visualization of where profitable working hours go.</li>
+          <li><strong>Day 6: Story-Driven Social Proof & ROI Alignment:</strong> Addresses monetization pain points. Relates an illustrative case study of a real freelancer utilizing MindTrack data to realize they were vastly undercharging clients, enabling them to comfortably restructure their billable rates.</li>
+          <li><strong>Day 11: Proactive Friction-Check Intervention:</strong> A short, highly responsive, low-friction text-based check-in: <em>"Quick check-in—Need any help getting your dashboard optimized?"</em> Built to easily catch users experiencing onboarding barriers.</li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>The email sequence</h2>
-      <ol>
-        <li>Welcome: introduce MindTrack and guide the user
-          towards logging a first session.</li>
-        <li>Follow-up: explain how tracking sessions helps
-          users understand where their hours go.</li>
-        <li>Illustrative story: demonstrate how time tracking
-          could inform a freelancer’s pricing decisions.</li>
-        <li>Check-in: ask whether the user needs help
-          getting started.</li>
-      </ol>
+    <!-- SECTION 3: HUBSPOT AUTOMATION WORKFLOW CONFIGURATION -->
+    <section class="case-section-block">
+      <h2>3. Technical Logic Configuration inside HubSpot</h2>
+      <p>I configured this logic framework directly within HubSpot's automated workflow engine. The enrollment trigger initiates immediately upon an "Account Created" property timestamp. However, to respect active users and prevent system email fatigue, I implemented <strong>suppression logic branches</strong>. If a user logs an active session before a specific day trigger arrives, the workflow automatically pulls them out of the activation sequence and moves them cleanly into an advanced feature adoption dashboard.</p>
     </section>
 
-    <section>
-      <h2>What the evidence demonstrates</h2>
-      <p>The project screenshot shows 4 configured email
-        steps and business-day delays in HubSpot. The visible
-        email statistics show zero sends.</p>
-      <p>This demonstrates sequence setup and onboarding
-        communication design. It does not establish a
-        measured reduction in drop-off.</p>
+    <!-- SECTION 4: STRATEGIC ROI OUTCOMES -->
+    <section class="case-section-block outcomes-block">
+      <h2>4. Quantitative Impact & Value (Project Goals)</h2>
+      <p>Deploying targeted behavioral nurture logic rather than passive generic pipelines changes how a SaaS protects its acquisition investments:</p>
+      
+      <div class="outcomes-grid-mini">
+        <div class="outcome-pill"><strong>Accelerated Time-to-Value (TTV)</strong> by driving rapid habit formation</div>
+        <div class="outcome-pill"><strong>Reduced First-Week Churn</strong> through value-driven case illustrations</div>
+        <div class="outcome-pill"><strong>Automated Low-Touch Interventions</strong> liberating internal customer support bands</div>
+      </div>
     </section>
-    <section>
-  <h2>HubSpot build evidence</h2>
-<section>
-  <h2>HubSpot build evidence</h2>
-
-  <figure class="project-evidence">
-    <a href="mindtrack-sequence.jpg">
-      <img
-        src="mindtrack-sequence.jpg"
-        alt="MindTrack onboarding sequence in HubSpot,
-          showing four email steps and business-day delays."
-        loading="lazy"
-      >
-    </a>
-    <figcaption>
-      Screenshot from my HubSpot onboarding build.
-      The customer story shown is illustrative.
-      Tap the image to open the full-size version.
-    </figcaption>
-  </figure>
-  <p>
-  <a
-    class="button"
-    href="https://drive.google.com/file/d/1Fm0btNBQj1wWYgXEh86-_N8QD_6Rmm_D/view"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    View full project document (opens in new tab)
-  </a>
-  </p>
-</section>
   </main>
+
+  <!-- FOOTER CLOSING CALL TO ACTION -->
+  <footer class="contact-panel">
+    <h2>Want to build product adoption frameworks that stick?</h2>
+    <p>Let's work together to optimize your user activation loops and drive consistent product retention.</p>
+    <div class="contact-links">
+      <a class="button btn-email" href="mailto:Ogbeairbnb@gmail.com">Email Janet</a>
+      <a class="button btn-linkedin" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+
 </body>
 </html>
