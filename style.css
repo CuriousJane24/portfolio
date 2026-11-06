@@ -353,7 +353,7 @@ h2 {
 }
 
 .tools-window.is-animated .tools-track {
-  animation: tools-slide-right 0s linear infinite;
+  animation: tools-slide-right 0.05s linear infinite;
 }
 
 .tools-window.is-paused .tools-track {
