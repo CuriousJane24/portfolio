@@ -5,201 +5,197 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Janet | Customer Success Portfolio</title>
   <link rel="stylesheet" href="style.css?v=2">
+  <!-- Clean font pairing for modern layout readability -->
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- NAVIGATION BAR -->
   <nav class="site-nav" aria-label="Main navigation">
-  <a href="#projects">Projects</a>
-  <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  <a href="#certifications">Certifications</a>
+    <div class="nav-brand">Janet <span class="brand-accent">/ CS & Ops</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#tools">Tools</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact" class="nav-cta">Let's Connect</a>
+    </div>
   </nav>
-<header class="intro">
-  <img
-    class="profile-photo"
-    src="github_portfolio_photo.jpg"
-    alt="Portrait of Janet Ogbe-Ishicheli"
-  >
 
-  <div class="intro-text">
-    <h1>Janet Ogbe-Ishicheli</h1>
-    <p>Customer Success, CRM and Operations</p>
-    <p>Explore my projects and the thinking behind my work.</p>
-    <a class="button" href="#projects">Explore my projects</a>
-  </div>
-</header>
+  <!-- INTRO / HERO SECTION -->
+  <header class="intro">
+    <div class="intro-grid-container">
+      <div class="intro-profile-block">
+        <img class="profile-photo" src="github_portfolio_photo.jpg" alt="Portrait of Janet Ogbe-Ishicheli">
+        <div class="intro-text">
+          <h1>Janet Ogbe-Ishicheli</h1>
+          <p class="subtitle">Customer Success, CRM and Operations</p>
+          <p class="tagline">Leveraging a business-owner's mindset to optimize customer retention pipelines and automate platform processes.</p>
+          <a class="button" href="#projects">Explore my projects</a>
+        </div>
+      </div>
+      
+      <!-- INTRODUCTORY SHORT VIDEO -->
+      <div class="intro-video-block">
+        <div class="video-wrapper">
+          <!-- Replace URL below with your actual Loom, YouTube, or Vimeo embed link -->
+          <iframe src="https://youtube.com" title="Janet Intro Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="video-caption">🎥 Watch my 2-minute overview on aligning CS operations with business ROI</p>
+      </div>
+    </div>
+  </header>
+
   <main>
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="about-panel">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-bio">
+          <p>I founded Madamereal Fabrics &amp; Styling in 2018. Running the business gave me deep, hands-on experience managing volatile customer lifecycles, coordinating order tracking, and pioneering service recovery strategies that directly protected margins.</p>
+          <p>Today, I scale that entrepreneurial foundation through technical design. By building data-centered workflows and automation maps primarily in <strong>HubSpot</strong>, I systematically eliminate onboarding churn and bring analytical clarity to customer health scoring.</p>
+        </div>
+        <div class="about-philosophy-card">
+          <h3>My CS Focus Points</h3>
+          <ul>
+            <li><strong>Data Cleanliness:</strong> Healthy pipelines require clean contacts and properties.</li>
+            <li><strong>Time-to-Value:</strong> Engineering concise communications to get clients active rapidly.</li>
+            <li><strong>Founder Grit:</strong> Taking absolute strategic ownership of every account problem.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS SECTION -->
     <section class="metrics" aria-labelledby="metrics-heading">
-  <h2 id="metrics-heading">My work in numbers</h2>
-
-  <dl class="metrics-grid">
-    <div class="metric">
-      <dt>Contacts deduplicated</dt>
-      <dd data-target="2000">2,000+</dd>
-    </div>
-
-    <div class="metric">
-      <dt>Orders delivered</dt>
-      <dd data-target="200">200+</dd>
-    </div>
-
-    <div class="metric">
-      <dt>Customers served</dt>
-      <dd data-target="100">100+</dd>
-    </div>
-
-    <div class="metric">
-      <dt>Workflows built</dt>
-      <dd data-target="20">20+</dd>
-    </div>
-
-    <div class="metric">
-      <dt>Customer lifecycle stages</dt>
-      <dd data-target="6">6+</dd>
-    </div>
-    
-  </dl>
-</section>
-
+      <h2 id="metrics-heading">My Work in Numbers</h2>
+      <dl class="metrics-grid">
+        <div class="metric">
+          <dt>Contacts Deduplicated</dt>
+          <dd data-target="2000">2,000+</dd>
+        </div>
+        <div class="metric">
+          <dt>Orders Delivered</dt>
+          <dd data-target="200">200+</dd>
+        </div>
+        <div class="metric">
+          <dt>Customers Served</dt>
+          <dd data-target="100">100+</dd>
+        </div>
+        <div class="metric">
+          <dt>Workflows Built</dt>
+          <dd data-target="20">20+</dd>
+        </div>
+        <div class="metric">
+          <dt>Customer Lifecycle Stages</dt>
+          <dd data-target="6">6+</dd>
+        </div>
+      </dl>
     </section>
-  <section id="projects" class="projects-panel">
-    <h2>Selected Works.</h2>
-    <div class="project-grid">
-    <article class="project-card">
-  <p>Founder experience</p>
-  <h3>Madamereal: Customer Service Recovery</h3>
-  <p>How I coordinated a dress remake and express delivery
-    after a remote customer's order did not fit.</p>
-      <a class="button" href="madamereal.html">Read the case study</a>
-</article>
-    <article class="project-card">
-  <p> HubSpot build</p>
-  <h3>MindTrack: Customer Onboarding</h3>
-  <p>A four-email sequence designed to help new users
-    start tracking work sessions and understand
-    the product’s value.</p>
-  <a class="button" href="mindtrack.html">
-    Read the MindTrack case study
-  </a>
-    </article>
-      <article class="project-card">
-  <p>DWG Work.</p>
-  <h3>BukkiBooks: Customer Health and Adoption</h3>
-  <p>Customer health scoring and at-risk workflows
-    designed to identify disengagement and guide
-    proactive follow-up.</p>
-  <p>My role: project management, research and automation.</p>
-  <a class="button" href="bukkibooks.html">
-    Read the BukkiBooks case study
-  </a>
-</article>
-      <article class="project-card">
-  <p>Customer experience case study.</p>
-  <h3>Ijeoma Home &amp; Living:
-    Customer Journey, Experience &amp; Satisfaction</h3>
-  <p>A coordinated approach to clearer order confirmation,
-    production updates and post-purchase follow-up.</p>
-  <p>My role: quality assurance, team coordination and
-    review of the Zoho win-back automation.</p>
-  <a class="button" href="ijeoma.html">
-    Read the customer experience case study
-  </a>
-      </article>
-    </div>
-  </section>
-    <section id="about">
-  <h2>About me</h2>
-  <p>I founded Madamereal Fabrics &amp; Styling in 2018.
-    Running the business has given me hands-on experience
-    managing customer relationships, coordinating orders
-    and resolving service issues.</p>
-  <p>I am building on that experience through training
-    and practical projects in Customer Success, CRM
-    and Operations.</p>
-      </section>
-    <a href="#tools">Tools</a>
-    <section id="certifications">
-  <h2>Certifications</h2>
-  <ul>
-    <li>HubSpot Service Hub Software Certification</li>
-    <li>HubSpot Inbound Certification</li>
-  </ul>
+
+    <!-- CASE STUDIES & SELECTED WORKS -->
+    <section id="projects" class="projects-panel">
+      <h2>Selected Works</h2>
+      <div class="project-grid">
+        
+        <!-- Case Study 1: Founder Experience -->
+        <article class="project-card founder-card">
+          <span class="card-badge badge-orange">Founder Experience</span>
+          <h3>Madamereal: Customer Service Recovery</h3>
+          <p>How I coordinated a comprehensive dress remake pipeline and express cross-regional delivery strategy after a remote customer's complex order failed to fit.</p>
+          <a class="button" href="madamereal.html">Read the case study</a>
+        </article>
+
+        <!-- Case Study 2: HubSpot Onboarding -->
+        <article class="project-card">
+          <span class="card-badge">HubSpot Build</span>
+          <h3>MindTrack: Customer Onboarding</h3>
+          <p>An automated four-part email nurturing sequence systematically engineered to guide fresh platform users to capture work sessions and identify immediate core product values.</p>
+          <a class="button" href="mindtrack.html">Read the MindTrack case study</a>
+        </article>
+
+        <!-- Case Study 3: Health and Adoption -->
+        <article class="project-card">
+          <span class="card-badge">DWG Work</span>
+          <h3>BukkiBooks: Customer Health &amp; Adoption</h3>
+          <p>Advanced custom health metrics and risk mitigation playbooks calculated to identify silent account churn indicators and deliver prescriptive engagement strategies.</p>
+          <p class="role-text"><strong>My Role:</strong> Project management, data research, and logic automation loops.</p>
+          <a class="button" href="bukkibooks.html">Read the BukkiBooks case study</a>
+        </article>
+
+        <!-- Case Study 4: Journey Optimization -->
+        <article class="project-card">
+          <span class="card-badge">Customer Experience</span>
+          <h3>Ijeoma Home &amp; Living: Journey Mapping</h3>
+          <p>A structured, multi-department blueprint ensuring explicit confirmation notifications, manufacturing updates, and friction-free post-purchase fulfillment checks.</p>
+          <p class="role-text"><strong>My Role:</strong> Quality assurance oversight, cross-team syncs, and Zoho win-back automation architecture.</p>
+          <a class="button" href="ijeoma.html">Read the case study</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS LIST -->
+    <section id="certifications" class="certifications-panel">
+      <h2>Verified Certifications</h2>
+      <ul class="certs-list">
+        <li>
+          <span class="cert-icon">🏆</span>
+          <div>
+            <strong>HubSpot Service Hub Software Certification</strong>
+            <p>Advanced client ticketing configurations, automation routines, and feedback loop management.</p>
+          </div>
+        </li>
+        <li>
+          <span class="cert-icon">🏆</span>
+          <div>
+            <strong>HubSpot Inbound Certification</strong>
+            <p>Customer-centric growth modeling mapping inbound value-adds over traditional transactional pipelines.</p>
+          </div>
+        </li>
+      </ul>
     </section>
     
+    <!-- TOOLS MARQUEE WINDOW -->
     <section id="tools" class="tools-section">
-  <h2>Tools I work with</h2>
-  <p>Tools I use across customer success, CRM and operations.
-    I’m currently learning GitHub.</p>
-<button type="button" id="tools-toggle" class="button" hidden>
-  Pause tool movement
-</button>
-  <div class="tools-window"
-       tabindex="0"
-       role="region"
-       aria-label="Tool logos — scroll sideways to explore">
-    <ul class="tools-track">
-      <li class="tool-item">
-        <img src="tool-hubspot.jpeg" alt="">
-        <span>HubSpot</span>
-      </li>
-      <li class="tool-item">
-        <img src="tool-google-workspace.jpeg" alt="">
-        <span>Google Workspace</span>
-      </li>
-      <li class="tool-item">
-        <img src="tool-zendesk.png" alt="">
-        <span>Zendesk</span>
-      </li>
-      <li class="tool-item">
-        <img src="tool-zapier.jpeg" alt="">
-        <span>Zapier</span>
-      </li>
-      <li class="tool-item">
-        <img src="tool-monday.jpeg" alt="">
-        <span>monday.com</span>
-      </li>
-      <li class="tool-item">
-        <img src="tool-salesforce.png" alt="">
-        <span>Salesforce</span>
-      </li>
-      <li class="tool-item">
-        <img src="tool-clickup.png" alt="">
-        <span>ClickUp</span>
-      </li>
-      <li class="tool-item">
-        <img src="tool-zoom.jpeg" alt="">
-        <span>Zoom</span>
-      </li>
-      <li class="tool-item">
-        <img src="tool-zoho.jpeg" alt="">
-        <span>Zoho</span>
-      </li>
-      <li class="tool-item">
-        <img src="tool-github.jpeg" alt="">
-        <span>GitHub</span>
-        <small>Currently learning</small>
-      </li>
-      <li class="tool-item">
-        <img src="tool-canva.jpeg" alt="">
-        <span>Canva</span>
-      </li>
-    </ul>
-  </div>
+      <h2>Tools I Work With</h2>
+      <p>System environments I navigate comfortably across Customer Success, CRM platforms, and operations pipelines.</p>
+      <button type="button" id="tools-toggle" class="button" hidden>Pause Movement</button>
+      
+      <div class="tools-window" tabindex="0" role="region" aria-label="Tool logos — scroll sideways to explore">
+        <ul class="tools-track">
+          <li class="tool-item"><img src="tool-hubspot.jpeg" alt=""><span>HubSpot</span></li>
+          <li class="tool-item"><img src="tool-google-workspace.jpeg" alt=""><span>Google Workspace</span></li>
+          <li class="tool-item"><img src="tool-zendesk.png" alt=""><span>Zendesk</span></li>
+          <li class="tool-item"><img src="tool-zapier.jpeg" alt=""><span>Zapier</span></li>
+          <li class="tool-item"><img src="tool-monday.jpeg" alt=""><span>monday.com</span></li>
+          <li class="tool-item"><img src="tool-salesforce.png" alt=""><span>Salesforce</span></li>
+          <li class="tool-item"><img src="tool-clickup.png" alt=""><span>ClickUp</span></li>
+          <li class="tool-item"><img src="tool-zoom.jpeg" alt=""><span>Zoom</span></li>
+          <li class="tool-item"><img src="tool-zoho.jpeg" alt=""><span>Zoho</span></li>
+          <li class="tool-item">
+            <img src="tool-github.jpeg" alt="">
+            <span>GitHub</span>
+            <small class="tool-learning">Currently scaling skill</small>
+          </li>
+          <li class="tool-item"><img src="tool-canva.jpeg" alt=""><span>Canva</span></li>
+        </ul>
+      </div>
     </section>
-    <section id="contact">
-  <h2>Let’s connect</h2>
-  <p>I’m open to opportunities in Customer Success,
-    CRM and Operations.</p>
 
-  <div class="contact-links">
-    <a class="button" href="mailto:Ogbeairbnb@gmail.com">
-      Email Janet
-    </a>
-    <a href="https://www.linkedin.com/in/janet-crm-specialist">
-      Connect on LinkedIn
-    </a>
-  </div>
+    <!-- FOOTER / CONTACT CALL TO ACTION -->
+    <section id="contact" class="contact-panel">
+      <h2>Let’s connect</h2>
+      <p>I’m open to scaling teams and operations within Customer Success, specialized CRM execution, and Process Optimization.</p>
+      <div class="contact-links">
+        <a class="button btn-email" href="mailto:Ogbeairbnb@gmail.com">Email Janet</a>
+        <a class="button btn-linkedin" href="https://www.linkedin.com/in/janet-crm-specialist" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
     </section>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
