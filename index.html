@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Janet | Customer Success Portfolio</title>
   <link rel="stylesheet" href="style.css?v=2">
-  <!-- Clean font pairing for modern layout readability -->
   <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
   <link href="https://googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
@@ -14,8 +13,6 @@
 
   <!-- NAVIGATION BAR -->
   <nav class="site-nav" aria-label="Main navigation">
-    <!-- Locate this line and change the src attribute to asset/ -->
-<img class="profile-photo" src="asset/github_portfolio_photo.jpg" alt="Portrait of Janet Ogbe-Ishicheli">
     <div class="nav-brand">Janet <span class="brand-accent">/ CS & Ops</span></div>
     <div class="nav-links">
       <a href="#about">About</a>
@@ -30,12 +27,11 @@
   <header class="intro">
     <div class="intro-grid-container">
       <div class="intro-profile-block">
-        <img class="profile-photo" src="github_portfolio_photo.jpg" alt="Portrait of Janet Ogbe-Ishicheli">
+        <img class="profile-photo" src="asset/github_portfolio_photo.jpg" alt="Portrait of Janet Ogbe-Ishicheli">
         <div class="intro-text">
           <h1>Janet Ogbe-Ishicheli</h1>
-          <p class="subtitle">Customer Success, CRM and Operations Specialist. </p>
-          <p class="tagline">Leveraging a Business 
-            owner's mindset to Optimize Customer Retention Pipelines and Automate platform processes.</p>
+          <p class="subtitle">Customer Success, CRM and Operations Specialist</p>
+          <p class="tagline">Leveraging a business owner's mindset to optimize customer retention pipelines and automate platform processes.</p>
           <a class="button" href="#projects">Explore my projects</a>
         </div>
       </div>
@@ -43,7 +39,6 @@
       <!-- INTRODUCTORY SHORT VIDEO -->
       <div class="intro-video-block">
         <div class="video-wrapper">
-          <!-- Replace URL below with your actual Loom, YouTube, or Vimeo embed link -->
           <iframe src="https://youtube.com" title="Janet Intro Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <p class="video-caption">🎥 Watch my 2-minute overview on aligning CS operations with business ROI</p>
@@ -57,8 +52,8 @@
       <h2>About Me</h2>
       <div class="about-grid">
         <div class="about-bio">
-          <p> Having owned and managed a business for 5+ years: running the business gave me deep, hands-on experience managing volatile Customer lifecycles, Coordinating order tracking, building quality Customer's Experience and pioneering service recovery strategies that directly protected Margins.</p>
-          <p>Today, I scale that entrepreneurial foundation through technical design by building data-centered workflows,Customer Journey Processes and Automation maps primarily in <strong>HubSpot</strong>. I systematically eliminate onboarding churn and bring analytical clarity to Customer Health Scoring.</p>
+          <p>Having owned and managed a business for 5+ years: running the business gave me deep, hands-on experience managing volatile customer lifecycles, coordinating order tracking, building quality customer experiences, and pioneering service recovery strategies that directly protected margins.</p>
+          <p>Today, I scale that entrepreneurial foundation through technical design by building data-centered workflows, customer journey processes, and automation maps primarily in <strong>HubSpot</strong>. I systematically eliminate onboarding churn and bring analytical clarity to customer health scoring.</p>
         </div>
         <div class="about-philosophy-card">
           <h3>My CS Focus Points</h3>
@@ -73,148 +68,152 @@
 
     <!-- METRICS SECTION -->
     <section class="metrics" aria-labelledby="metrics-heading">
-      <h2 id="metrics-heading">My Work in Numbers</h2>
-      <dl class="metrics-grid">
-        <div class="metric">
-          <dt>Contacts Deduplicated</dt>
-          <dd data-target="2000">2,000+</dd>
-        </div>
-        <div class="metric">
-          <dt>Orders Delivered</dt>
-          <dd data-target="200">200+</dd>
-        </div>
-        <div class="metric">
-          <dt>Customers Served</dt>
-          <dd data-target="100">100+</dd>
-        </div>
-        <div class="metric">
-          <dt>Workflows Built</dt>
-          <dd data-target="20">20+</dd>
-        </div>
-        <div class="metric">
-          <dt>Customer Lifecycle Stages</dt>
-          <dd data-target="6">6+</dd>
-        </div>
-      </dl>
+      <div class="container">
+        <h2 id="metrics-heading">My Work in Numbers</h2>
+        <dl class="metrics-grid">
+          <div class="metric-card">
+            <dt>Contacts Deduplicated</dt>
+            <dd data-target="2000">2,000+</dd>
+          </div>
+          <div class="metric-card">
+            <dt>Orders Delivered</dt>
+            <dd data-target="200">200+</dd>
+          </div>
+          <div class="metric-card">
+            <dt>Customers Served</dt>
+            <dd data-target="100">100+</dd>
+          </div>
+          <div class="metric-card">
+            <dt>Workflows Built</dt>
+            <dd data-target="20">20+</dd>
+          </div>
+          <div class="metric-card">
+            <dt>Customer Lifecycle Stages</dt>
+            <dd data-target="6">6+</dd>
+          </div>
+        </dl>
+      </div>
     </section>
 
     <!-- CASE STUDIES & SELECTED WORKS -->
-      <!-- CASE STUDIES & SELECTED WORKS -->
-  <section id="projects" class="projects-panel">
-    <h2>Selected Works</h2>
-    <p class="section-subtitle">Real and simulated frameworks demonstrating execution, data analysis, and relationship management.</p>
-    
-    <div class="project-grid">
-      
-      <!-- Case Study 1: Founder Experience -->
-      <article class="project-card founder-card">
-        <span class="card-badge badge-orange">Founder Experience</span>
+    <section id="projects" class="projects-panel">
+      <div class="container">
+        <h2>Selected Works</h2>
+        <p class="section-subtitle">Real and simulated frameworks demonstrating execution, data analysis, and relationship management.</p>
         
-        <!-- Homepage Preview Screenshot -->
-        <div class="homepage-project-preview">
-          <img src="asset/madameral 1.jpg" alt="Madamereal Service Recovery Roadmap Preview">
+        <div class="project-grid">
+          
+          <!-- Case Study 1: Founder Experience -->
+          <article class="project-card founder-card">
+            <span class="card-badge badge-orange">Founder Experience</span>
+            <div class="homepage-project-preview">
+              <img src="asset/madamereal 1.jpg" alt="Madamereal Service Recovery Roadmap Preview">
+            </div>
+            <h3>Madamereal: Customer Service Recovery</h3>
+            <p>How I coordinated a comprehensive dress remake pipeline and express cross-regional delivery strategy after a remote customer's complex order failed to fit.</p>
+            <a class="button" href="case-studies/madamereal.html">Read the case study</a>
+          </article>
+
+          <!-- Case Study 2: HubSpot Onboarding -->
+          <article class="project-card">
+            <span class="card-badge">HubSpot Build</span>
+            <div class="homepage-project-preview">
+              <img src="asset/mindtrack 1.jpg" alt="HubSpot Onboarding Automation Workflow Screenshot">
+            </div>
+            <h3>MindTrack: Customer Onboarding</h3>
+            <p>An automated four-part email nurturing sequence systematically engineered to guide fresh platform users to capture work sessions and identify immediate core product values.</p>
+            <a class="button" href="case-studies/mindtrack.html">Read the MindTrack case study</a>
+          </article>
+
+          <!-- Case Study 3: Health and Adoption -->
+          <article class="project-card">
+            <span class="card-badge">DWG Work</span>
+            <div class="homepage-project-preview">
+              <img src="asset/bukkibooks 1.jpg" alt="BukkiBooks Custom Health Score Matrix View">
+            </div>
+            <h3>BukkiBooks: Customer Health &amp; Adoption</h3>
+            <p>Advanced custom health metrics and risk mitigation playbooks calculated to identify silent account churn indicators and deliver prescriptive engagement strategies.</p>
+            <p class="role-text"><strong>My Role:</strong> Project management, data research, and logic automation loops.</p>
+            <a class="button" href="case-studies/bukkibooks.html">Read the BukkiBooks case study</a>
+          </article>
+
+          <!-- Case Study 4: Journey Optimization -->
+          <article class="project-card">
+            <span class="card-badge">Customer Experience</span>
+            <div class="homepage-project-preview ijeoma-video-preview">
+              <div class="card-video-wrapper">
+                <iframe src="https://youtube.com" title="Ijeoma AI Visual Illustration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+            <h3>Ijeoma Home &amp; Living: Journey Mapping</h3>
+            <p>A structured, multi-department blueprint ensuring explicit confirmation notifications, manufacturing updates, and friction-free post-purchase fulfillment checks.</p>
+            <p class="role-text"><strong>My Role:</strong> Quality assurance oversight, cross-team syncs, and Zoho win-back automation architecture.</p>
+            <a class="button" href="case-studies/ijeoma.html">Read the case study</a>
+          </article>
+
         </div>
-
-        <h3>Madamereal: Customer Service Recovery</h3>
-        <p>How I coordinated a comprehensive dress remake pipeline and express cross-regional delivery strategy after a remote customer's complex order failed to fit.</p>
-        <a class="button" href="case-studies/madamereal.html">Read the case study</a>
-      </article>
-
-      <!-- Case Study 2: HubSpot Onboarding -->
-      <article class="project-card">
-        <span class="card-badge">HubSpot Build</span>
-        
-        <!-- Homepage Preview Screenshot -->
-        <div class="homepage-project-preview">
-          <img src="asset/mindtrack 1.jpg" alt="HubSpot Onboarding Automation Workflow Screenshot">
-        </div>
-
-        <h3>MindTrack: Customer Onboarding</h3>
-        <p>An automated four-part email nurturing sequence systematically engineered to guide fresh platform users to capture work sessions and identify immediate core product values.</p>
-        <a class="button" href="case-studies/mindtrack.html">Read the MindTrack case study</a>
-      </article>
-
-      <!-- Case Study 3: Health and Adoption -->
-      <article class="project-card">
-        <span class="card-badge">DWG Work</span>
-        
-        <!-- Homepage Preview Screenshot -->
-        <div class="homepage-project-preview">
-          <img src="asset/bukkibooks 1.jpg" alt="BukkiBooks Custom Health Score Matrix View">
-        </div>
-
-        <h3>BukkiBooks: Customer Health &amp; Adoption</h3>
-        <p>Advanced custom health metrics and risk mitigation playbooks calculated to identify silent account churn indicators and deliver prescriptive engagement strategies.</p>
-        <p class="role-text"><strong>My Role:</strong> Project management, data research, and logic automation loops.</p>
-        <a class="button" href="case-studies/bukkibooks.html">Read the BukkiBooks case study</a>
-      </article>
-
-      <!-- Case Study 4: Journey Optimization + AI VIDEO EMBED -->
-      <article class="project-card">
-        <span class="card-badge">Customer Experience</span>
-        
-        <!-- Playable AI Video Embed for Ijeoma -->
-        <div class="homepage-project-preview ijeoma-video-preview">
-          <div class="card-video-wrapper">
-            <!-- Replace URL below with your actual Loom, Vimeo, or YouTube link -->
-            <iframe src="https://youtube.com" title="Ijeoma AI Visual Illustration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-
-        <h3>Ijeoma Home &amp; Living: Journey Mapping</h3>
-        <p>A structured, multi-department blueprint ensuring explicit confirmation notifications, manufacturing updates, and friction-free post-purchase fulfillment checks.</p>
-        <p class="role-text"><strong>My Role:</strong> Quality assurance oversight, cross-team syncs, and Zoho win-back automation architecture.</p>
-        <a class="button" href="case-studies/ijeoma.html">Read the case study</a>
-      </article>
-    
-  <div>
-    <!-- CERTIFICATIONS LIST -->
-    <section id="certifications" class="certifications-panel">
-      <h2>Verified Certifications</h2>
-      <ul class="certs-list">
-        <li>
-          <span class="cert-icon">🏆</span>
-          <div>
-            <strong>HubSpot Service Hub Software Certification</strong>
-            <p>Advanced client ticketing configurations, automation routines, and feedback loop management.</p>
-          </div>
-        </li>
-        <li>
-          <span class="cert-icon">🏆</span>
-          <div>
-            <strong>HubSpot Inbound Certification</strong>
-            <p>Customer-centric growth modeling mapping inbound value-adds over traditional transactional pipelines.</p>
-          </div>
-        </li>
-      </ul>
+      </div>
     </section>
-  </div>
 
-     <div>
-    <!-- TOOLS MARQUEE WINDOW -->
-    <section id="tools" class="tools-section">
-      <h2>Tools I Work With</h2>
-      <p>System environments I navigate comfortably across Customer Success, CRM platforms, and operations pipelines.</p>
-      <button type="button" id="tools-toggle" class="button" hidden>Pause Movement</button>
-      
-      <div class="tools-window" tabindex="0" role="region" aria-label="Tool logos — scroll sideways to explore">
-        <ul class="tools-track">
-          <li class="tool-item"><img src="tool-hubspot.jpeg" alt=""><span>HubSpot</span></li>
-          <li class="tool-item"><img src="tool-google-workspace.jpeg" alt=""><span>Google Workspace</span></li>
-          <li class="tool-item"><img src="tool-zendesk.png" alt=""><span>Zendesk</span></li>
-          <li class="tool-item"><img src="tool-zapier.jpeg" alt=""><span>Zapier</span></li>
-          <li class="tool-item"><img src="tool-monday.jpeg" alt=""><span>monday.com</span></li>
-          <li class="tool-item"><img src="tool-salesforce.png" alt=""><span>Salesforce</span></li>
-          <li class="tool-item"><img src="tool-clickup.png" alt=""><span>ClickUp</span></li>
-          <li class="tool-item"><img src="tool-zoom.jpeg" alt=""><span>Zoom</span></li>
-          <li class="tool-item"><img src="tool-zoho.jpeg" alt=""><span>Zoho</span></li>
-          <li class="tool-item">
-            <img src="tool-github.jpeg" alt="">
-            <span>GitHub</span>
-            <small class="tool-learning">Currently scaling skill</small>
+        <!-- CERTIFICATIONS PANEL -->
+    <section id="certifications" class="certifications-panel">
+      <div class="container">
+        <h2>Verified Certifications</h2>
+        <ul class="certs-list">
+          <li>
+            <span class="cert-icon">🏆</span>
+            <div>
+              <strong>HubSpot Service Hub Software Certification</strong>
+              <p>Advanced client ticketing configurations, automation routines, and feedback loop management.</p>
+            </div>
           </li>
-          <li class="tool-item"><img src="tool-canva.jpeg" alt=""><span>Canva</span></li>
+          <li>
+            <span class="cert-icon">🏆</span>
+            <div>
+              <strong>HubSpot Inbound Certification</strong>
+              <p>Customer-centric growth modeling mapping inbound value-adds over traditional transactional pipelines.</p>
+            </div>
+          </li>
         </ul>
+      </div>
+    </section>
+    
+    <!-- TOOLS MARQUEE SLIDER -->
+    <section id="tools" class="tools-section">
+      <div class="container">
+        <h2>Tools I Work With</h2>
+        <p>System environments I navigate comfortably across Customer Success, CRM platforms, and operations pipelines.</p>
+        <button type="button" id="tools-toggle" class="button" hidden>Pause Movement</button>
+        
+        <div class="tools-window" tabindex="0" role="region" aria-label="Tool logos — scroll sideways to explore">
+          <ul class="tools-track">
+            <!-- First Track Loop Layer (Points cleanly to asset/) -->
+            <li class="tool-item"><img src="asset/tool-hubspot.jpeg" alt=""><span>HubSpot</span></li>
+            <li class="tool-item"><img src="asset/tool-google-workspace.jpeg" alt=""><span>Google Workspace</span></li>
+            <li class="tool-item"><img src="asset/tool-zendesk.png" alt=""><span>Zendesk</span></li>
+            <li class="tool-item"><img src="asset/tool-zapier.jpeg" alt=""><span>Zapier</span></li>
+            <li class="tool-item"><img src="asset/tool-monday.jpeg" alt=""><span>monday.com</span></li>
+            <li class="tool-item"><img src="asset/tool-salesforce.png" alt=""><span>Salesforce</span></li>
+            <li class="tool-item"><img src="asset/tool-clickup.png" alt=""><span>ClickUp</span></li>
+            <li class="tool-item"><img src="asset/tool-zoom.jpeg" alt=""><span>Zoom</span></li>
+            <li class="tool-item"><img src="asset/tool-zoho.jpeg" alt=""><span>Zoho</span></li>
+            <li class="tool-item"><img src="asset/tool-github.jpeg" alt=""><span>GitHub <small class="tool-learning">Scaling</small></span></li>
+            <li class="tool-item"><img src="asset/tool-canva.jpeg" alt=""><span>Canva</span></li>
+            
+            <!-- Second Duplicated Track Layer to maintain the infinite smooth motion loop -->
+            <li class="tool-item"><img src="asset/tool-hubspot.jpeg" alt=""><span>HubSpot</span></li>
+            <li class="tool-item"><img src="asset/tool-google-workspace.jpeg" alt=""><span>Google Workspace</span></li>
+            <li class="tool-item"><img src="asset/tool-zendesk.png" alt=""><span>Zendesk</span></li>
+            <li class="tool-item"><img src="asset/tool-zapier.jpeg" alt=""><span>Zapier</span></li>
+            <li class="tool-item"><img src="asset/tool-monday.jpeg" alt=""><span>monday.com</span></li>
+            <li class="tool-item"><img src="asset/tool-salesforce.png" alt=""><span>Salesforce</span></li>
+            <li class="tool-item"><img src="asset/tool-clickup.png" alt=""><span>ClickUp</span></li>
+            <li class="tool-item"><img src="asset/tool-zoom.jpeg" alt=""><span>Zoom</span></li>
+            <li class="tool-item"><img src="asset/tool-zoho.jpeg" alt=""><span>Zoho</span></li>
+            <li class="tool-item"><img src="asset/tool-github.jpeg" alt=""><span>GitHub <small class="tool-learning">Scaling</small></span></li>
+            <li class="tool-item"><img src="asset/tool-canva.jpeg" alt=""><span>Canva</span></li>
+          </ul>
+        </div>
       </div>
     </section>
 
