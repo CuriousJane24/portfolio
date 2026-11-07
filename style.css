@@ -770,3 +770,54 @@ main.case-study a:not(.button) {
   color: #914018;
   text-decoration: underline;
 }
+.ijeoma-page .case-header {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: clamp(20px, 4vw, 40px);
+  background: linear-gradient(120deg, #103B42, #205E74);
+  border-top: 4px solid #E98B54;
+  border-radius: 12px;
+  color: #FFFFFF;
+}
+
+.ijeoma-page .case-header h1,
+.ijeoma-page .case-header .case-intro-sub,
+.ijeoma-page .case-meta-bar,
+.ijeoma-page .case-meta-bar strong {
+  color: #FFFFFF;
+}
+
+.ijeoma-page .case-header .card-badge {
+  background: #FFF1E5;
+  color: #793408;
+}
+
+.ijeoma-page #ijeoma-reading,
+.ijeoma-page #ijeoma-reading .case-section-block,
+.ijeoma-page .contact-panel {
+  background: #FFF8F0;
+  color: #20383A;
+}
+
+.ijeoma-page #ijeoma-reading {
+  padding: clamp(20px, 4vw, 40px);
+  border-radius: 12px;
+}
+
+.ijeoma-page #ijeoma-reading h2,
+.ijeoma-page .contact-panel h2 {
+  color: #103B42;
+}
+
+.ijeoma-page #ijeoma-reading :is(p, li, strong),
+.ijeoma-page .contact-panel p {
+  color: #20383A;
+}
+
+.ijeoma-page #ijeoma-reading :is(.tech-highlight-callout, .outcome-pill) {
+  background: #F1E6D9;
+  color: #20383A;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
