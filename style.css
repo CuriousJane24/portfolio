@@ -662,4 +662,64 @@ h1, h2, h3 {
   text-transform: lowercase;
   letter-spacing: 0.01em;
 }
-  
+/* Portfolio colours: deep teal, teal-blue and burnt orange */
+
+body {
+  background-color: #103B42;
+  color: #20383A;
+}
+
+.intro {
+  background: linear-gradient(120deg, #103B42, #185665, #205E74);
+  border-top-color: #E98B54;
+  color: #FFFFFF;
+}
+
+.intro h1 {
+  color: #FFFFFF;
+}
+
+.intro .subtitle {
+  color: #FFD2AF;
+}
+
+.intro .tagline,
+.intro .video-caption {
+  color: #E5F1F1;
+}
+
+/* These sections sit directly on the dark page background. */
+.about-panel,
+.metrics,
+.certifications-panel {
+  color: #E5F1F1;
+}
+
+.about-panel h2,
+.metrics h2,
+.certifications-panel h2 {
+  color: #FFFFFF;
+}
+
+.about-bio p {
+  color: #E5F1F1;
+}
+
+/* Keep dark lettering inside the light cards. */
+.about-philosophy-card,
+.metric-card,
+.certs-list li {
+  color: #20383A;
+}
+
+.metric-card dd {
+  color: #185665;
+}
+
+/* White lettering on burnt orange for the main actions. */
+.intro .button,
+.site-nav .nav-cta,
+.contact-panel .btn-email {
+  background-color: #A94316;
+  color: #FFFFFF;
+}  
