@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Janet | Customer Success Portfolio</title>
-  <link rel="stylesheet" href="style.css?v=2">
+  <!-- Jekyll dynamic baseurl for stylesheet cache safety -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/style.css?v=4">
   <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://googleapis.com" rel="stylesheet">
 </head>
 <body>
 
@@ -15,238 +16,310 @@
   <nav class="site-nav" aria-label="Main navigation">
     <div class="nav-brand">Janet <span class="brand-accent">/ CS & Ops</span></div>
     <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#tools">Tools</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact" class="nav-cta">Let's Connect</a>
+      <a href="#contact-tab" onclick="forceTabSwitch('contact-tab')" class="nav-cta">Let's Connect</a>
     </div>
   </nav>
 
-  <!-- INTRO / HERO SECTION -->
+  <!-- INTRO / BOLD HERO HEADER SECTION (Always Visible) -->
   <header class="intro">
     <div class="intro-grid-container">
       <div class="intro-profile-block">
-        <img class="profile-photo" src="asset/github_portfolio_photo.jpg" alt="Portrait of Janet Ogbe-Ishicheli">
+        <img class="profile-photo" src="{{ site.baseurl }}/asset/github_portfolio_photo.jpg" alt="Portrait of Janet Ogbe-Ishicheli">
         <div class="intro-text">
           <h1>Janet Ogbe-Ishicheli</h1>
           <p class="subtitle">Customer Success, CRM and Operations Specialist</p>
           <p class="tagline">Leveraging a business owner's mindset to optimize customer retention pipelines and automate platform processes.</p>
-          <a class="button" href="#projects">Explore my projects</a>
         </div>
       </div>
       
-      <!-- INTRODUCTORY SHORT VIDEO -->
+      <!-- INTRODUCTORY WALKTHROUGH VIDEO -->
       <div class="intro-video-block">
         <div class="video-wrapper">
-          <iframe src="https://youtube.com" title="Janet Intro Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <video controls preload="metadata" playsinline width="100%">
+            <source src="{{ site.baseurl }}/asset/my-csm-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <p class="video-caption">🎥 Watch my 2-minute overview on aligning CS operations with business ROI</p>
+        <p class="video-caption">🎥 Watch my portfolio overview on aligning CS operations with business ROI</p>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- ABOUT ME SECTION -->
-    <section id="about" class="about-panel">
-      <h2>About Me</h2>
-      <div class="about-grid">
-        <div class="about-bio">
-          <p>Having owned and managed a business for 5+ years: running the business gave me deep, hands-on experience managing volatile customer lifecycles, coordinating order tracking, building quality customer experiences, and pioneering service recovery strategies that directly protected margins.</p>
-          <p>Today, I scale that entrepreneurial foundation through technical design by building data-centered workflows, customer journey processes, and automation maps primarily in <strong>HubSpot</strong>. I systematically eliminate onboarding churn and bring analytical clarity to customer health scoring.</p>
-        </div>
-        <div class="about-philosophy-card">
-          <h3>My CS Focus Points</h3>
-          <ul>
-            <li><strong>Data Cleanliness:</strong> Healthy pipelines require clean contacts and properties.</li>
-            <li><strong>Time-to-Value:</strong> Engineering concise communications to get clients active rapidly.</li>
-            <li><strong>Founder Grit:</strong> Taking absolute strategic ownership of every account problem.</li>
-          </ul>
+  <!-- HORIZONTAL OVAL PILL SELECTION NAVIGATION DECK -->
+  <div class="portfolio-tabs">
+    <button class="tab-btn active" onclick="openSection(event, 'about-tab')">About me</button>
+    <button class="tab-btn" onclick="openSection(event, 'dashboard-tab')">Dashboard</button>
+    <button class="tab-btn" onclick="openSection(event, 'projects-tab')">Projects</button>
+    <button class="tab-btn" onclick="openSection(event, 'skills-tab')">Skills &amp; Strength</button>
+    <button class="tab-btn" onclick="openSection(event, 'certifications-tab')">Certification</button>
+    <button class="tab-btn" onclick="openSection(event, 'academic-tab')">Academic</button>
+    <button class="tab-btn" onclick="openSection(event, 'tools-tab')">Tools</button>
+    <button class="tab-btn" onclick="openSection(event, 'contact-tab')">Contact Me</button>
+  </div>
+
+  <!-- STACKED DRAWER CARDS MAIN WORKSPACE -->
+  <main class="dashboard-content">
+    
+    <!-- SECTION 1: ABOUT ME (Open on Load) -->
+    <div id="about-tab" class="tab-content active-content">
+      <div class="portfolio-card-block">
+        <h3>About me</h3>
+        <p class="block-subtitle">Professional profile summary and core background baseline</p>
+        <div class="about-grid">
+          <div class="about-bio">
+            <p>Having owned and managed a business for 5+ years: running the business gave me deep, hands-on experience managing volatile customer lifecycles, coordinating order tracking, building quality customer experiences, and pioneering service recovery strategies that directly protected margins.</p>
+            <p>Today, I scale that entrepreneurial foundation through technical design by building data-centered workflows, customer journey processes, and automation maps primarily in <strong>HubSpot</strong>. I systematically eliminate onboarding churn and bring analytical clarity to customer health scoring.</p>
+          </div>
+          <div class="about-philosophy-card">
+            <h3>My CS Focus Points</h3>
+            <ul>
+              <li><strong>Data Cleanliness:</strong> Healthy pipelines require clean contacts and properties.</li>
+              <li><strong>Time-to-Value:</strong> Engineering concise communications to get clients active rapidly.</li>
+              <li><strong>Founder Grit:</strong> Taking absolute strategic ownership of every account problem.</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </section>
-    
+    </div>
 
-        <!-- 5. METRICS SECTION -->
-    <section class="metrics" aria-labelledby="metrics-heading">
-      <div class="container">
-        <h2 id="metrics-heading">My Work in Numbers</h2>
+    <!-- SECTION 2: DASHBOARD (Metrics Grid Safely Moved Inside) -->
+    <div id="dashboard-tab" class="tab-content metrics">
+      <div class="portfolio-card-block">
+        <h3>Dashboard</h3>
+        <p class="block-subtitle">Quantitative operational efficiency volume summaries</p>
+        
         <dl class="metrics-grid">
-          
-          <!-- FIXED: Re-added the exact class="metric" hook so script.js can rotate numbers -->
           <div class="metric-card metric">
             <dt>Contacts Deduplicated</dt>
             <dd data-target="2000">0</dd>
           </div>
-          
           <div class="metric-card metric">
             <dt>Orders Delivered</dt>
             <dd data-target="200">0</dd>
           </div>
-          
           <div class="metric-card metric">
             <dt>Customers Served</dt>
             <dd data-target="100">0</dd>
           </div>
-          
           <div class="metric-card metric">
             <dt>Workflows Built</dt>
             <dd data-target="20">0</dd>
           </div>
-          
           <div class="metric-card metric">
             <dt>Customer Lifecycle Stages</dt>
             <dd data-target="6">0</dd>
           </div>
-        </dl> <!-- FIXED: Closed the description list -->
-      </div> <!-- FIXED: Closed the container div -->
-    </section> <!-- FIXED: Closed the metrics section -->
+        </dl>
+      </div>
+    </div>
 
-      </section>
-
-    <!-- CASE STUDIES & SELECTED WORKS -->
-    <section id="projects" class="projects-panel">
-      <div class="container">
-        <h2>Selected Works</h2>
-        <p class="section-subtitle">Real and simulated frameworks demonstrating execution, data analysis, and relationship management.</p>
+    <!-- SECTION 3: PROJECTS -->
+    <div id="projects-tab" class="tab-content projects-panel">
+      <div class="portfolio-card-block">
+        <h3>Projects</h3>
+        <p class="block-subtitle">Real and simulated frameworks demonstrating analytical execution</p>
         
         <div class="project-grid">
-          
-          <!-- Case Study 1: Founder Experience -->
+          <!-- Case Study 1 -->
           <article class="project-card founder-card">
             <span class="card-badge badge-orange">Founder Experience</span>
             <div class="homepage-project-preview">
-              <img src="asset/madameral 1.jpg" alt="Madamereal Service Recovery Roadmap Preview">
+              <img src="{{ site.baseurl }}/asset/madameral 1.jpg" alt="Madamereal Service Recovery Roadmap Preview">
             </div>
             <h3>Madamereal: Customer Service Recovery</h3>
             <p>How I coordinated a comprehensive dress remake pipeline and express cross-regional delivery strategy after a remote customer's complex order failed to fit.</p>
             <p class="role-text"><strong>My Role:</strong> Operations coordination, cross-regional logistics, and account stabilization.</p>
-            <a class="button" href="case-studies/madamereal.html">Read the case study</a>
+            <a class="button" href="{{ site.baseurl }}/case-studies/madamereal.html">Read the case study</a>
           </article>
 
-          <!-- Case Study 2: HubSpot Onboarding -->
+          <!-- Case Study 2 -->
           <article class="project-card">
             <span class="card-badge">HubSpot Build</span>
             <div class="homepage-project-preview">
-              <img src="asset/mindtrack 1.jpg" alt="HubSpot Onboarding Automation Workflow Screenshot">
+              <img src="{{ site.baseurl }}/asset/mindtrack 1.jpg" alt="HubSpot Onboarding Automation Workflow Screenshot">
             </div>
             <h3>MindTrack: Customer Onboarding</h3>
             <p>An automated four-part email nurturing sequence systematically engineered to guide fresh platform users to capture work sessions and identify immediate core product values.</p>
             <p class="role-text"><strong>My Role:</strong> Email marketing architecture, HubSpot automation build, and copywriting.</p>
-            <a class="button" href="case-studies/mindtrack.html">Read the MindTrack case study</a>
+            <a class="button" href="{{ site.baseurl }}/case-studies/mindtrack.html">Read the MindTrack case study</a>
           </article>
 
-          <!-- Case Study 3: Health and Adoption -->
+          <!-- Case Study 3 -->
           <article class="project-card">
             <span class="card-badge">DWG Work</span>
             <div class="homepage-project-preview">
-              <img src="asset/bukkibooks 1.jpg" alt="BukkiBooks Custom Health Score Matrix View">
+              <img src="{{ site.baseurl }}/asset/bukkibooks 1.jpg" alt="BukkiBooks Custom Health Score Matrix View">
             </div>
             <h3>BukkiBooks: Customer Health &amp; Adoption</h3>
             <p>Advanced custom health metrics and risk mitigation playbooks calculated to identify silent account churn indicators and deliver prescriptive engagement strategies.</p>
             <p class="role-text"><strong>My Role:</strong> Project management, data research, and logic automation loops.</p>
-            <a class="button" href="case-studies/bukkibooks.html">Read the BukkiBooks case study</a>
+            <a class="button" href="{{ site.baseurl }}/case-studies/bukkibooks.html">Read the BukkiBooks case study</a>
           </article>
-        <!-- Case Study 4: Journey Optimization -->
+
+          <!-- Case Study 4 -->
           <article class="project-card">
             <span class="card-badge">Customer Experience</span>
             <div class="homepage-project-preview ijeoma-video-preview">
               <div class="card-video-wrapper">
-                
-                <!-- ADD YOUR EXTRACTED VIMEO EMBED LINK HERE -->
-                <iframe 
-                  src="https://vimeo.com/1244576971?fl=ip&fe=ec" 
-                  frameborder="0" 
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; web-share" 
-                  title="Ijeoma AI Visual Illustration">
-                </iframe>
-
+                <iframe src="https://vimeo.com" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; web-share" title="Ijeoma AI Visual Illustration"></iframe>
               </div>
             </div>
-            <h3>Ijeoma Home &amp; Living: Journey Mapping</h3>
-            <p>A structured, multi-department blueprint ensuring explicit confirmation notifications, manufacturing updates, and friction-free post-purchase fulfillment checks.</p>
-            <p class="role-text"><strong>My Role:</strong> Quality assurance oversight, cross-team syncs, and Zoho win-back automation architecture.</p>
-            <a class="button" href="case-studies/ijeoma.html">Read the case study</a>
+            <h3>Ijeoma: Journey Optimization</h3>
+            <p>Visual narrative optimization mapping out process improvements and alignment touchpoints across multi-tiered corporate client lifecycles.</p>
           </article>
-
-              
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- CERTIFICATIONS PANEL -->
-    <section id="certifications" class="certifications-panel">
-      <div class="container">
-        <h2>Verified Certifications</h2>
-        <ul class="certs-list">
-          <li>
-            <span class="cert-icon">🏆</span>
+    <!-- SECTION 4: SKILLS & STRENGTHS (Formatted cleanly into structural badges) -->
+    <div id="skills-tab" class="tab-content">
+      <div class="portfolio-card-block">
+        <h3>Skills &amp; Strength</h3>
+        <p class="block-subtitle">Operational core competencies and strategic alignment traits</p>
+        <div class="skills-tag-wrapper">
+          <span class="skill-tag">CRM Pipeline Architecture</span>
+          <span class="skill-tag">Cross-Regional Logistics</span>
+          <span class="skill-tag">Data Cleanliness</span>
+          <span class="skill-tag">Workflow Automation Loops</span>
+          <span class="skill-tag">Customer Health Scoring</span>
+          <span class="skill-tag">Churn Mitigation Playbooks</span>
+          <span class="skill-tag">Service Recovery Strategies</span>
+          <span class="skill-tag">Strategic Account Management</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 5: CERTIFICATION -->
+    <div id="certifications-tab" class="tab-content certifications-panel">
+      <div class="portfolio-card-block">
+        <h3>Certification</h3>
+        <p class="block-subtitle">Verified platform credentials and system operational qualifications</p>
+        <ul class="certs-list" style="list-style: none; padding: 0; margin: 0;">
+          <li style="display: flex; gap: 15px; margin-bottom: 20px; align-items: flex-start;">
+            <span class="cert-icon" style="font-size: 1.5rem;">🏆</span>
             <div>
-              <strong>HubSpot Service Hub Software Certification</strong>
-              <p>Advanced client ticketing configurations, automation routines, and feedback loop management.</p>
+              <strong style="color: #1e3a8a; font-size: 1.1rem; display: block; margin-bottom: 4px;">HubSpot Service Hub Software Certification</strong>
+              <p style="margin: 0; color: #4b5563;">Advanced client ticketing configurations, automation routines, and feedback loop management.</p>
             </div>
           </li>
-          <li>
-            <span class="cert-icon">🏆</span>
+          <li style="display: flex; gap: 15px; align-items: flex-start;">
+            <span class="cert-icon" style="font-size: 1.5rem;">🏆</span>
             <div>
-              <strong>HubSpot Inbound Certification</strong>
-              <p>Customer-centric growth modeling mapping inbound value-adds over traditional transactional pipelines.</p>
+              <strong style="color: #1e3a8a; font-size: 1.1rem; display: block; margin-bottom: 4px;">HubSpot Inbound Certification</strong>
+              <p style="margin: 0; color: #4b5563;">Customer-centric growth modeling mapping inbound value-adds over traditional transactional pipelines.</p>
             </div>
           </li>
         </ul>
       </div>
-    </section>
+    </div>
 
-        <!-- TOOLS MARQUEE SLIDER -->
-    <section id="tools" class="tools-section">
-      <div class="container">
-        <h2>Tools I Work With</h2>
-        <p>System environments I navigate comfortably across Customer Success, CRM platforms, and operations pipelines.</p>
+    <!-- SECTION 6: ACADEMIC -->
+    <div id="academic-tab" class="tab-content">
+      <div class="portfolio-card-block">
+        <h3>Academic</h3>
+        <p class="block-subtitle">Education background, foundational coursework, and studies history</p>
+        <strong style="color: #1e3a8a; font-size: 1.1rem; display: block; margin-bottom: 6px;">Bachelor of Science / Professional Degree</strong>
+        <p style="margin: 0; color: #4b5563;">Your institution name parameters and specialized business management, operations, or technical communication courses go right here.</p>
+      </div>
+    </div>
+
+    <!-- SECTION 7: TOOLS -->
+    <div id="tools-tab" class="tab-content tools-section">
+      <div class="portfolio-card-block">
+        <h3>Tools</h3>
+        <p class="block-subtitle">Platforms, ecosystem environments, and systems I navigate comfortably</p>
         <button type="button" id="tools-toggle" class="button" hidden>Pause Movement</button>
         
         <div class="tools-window" tabindex="0" role="region" aria-label="Tool logos — scroll sideways to explore">
           <ul class="tools-track">
-            <!-- First Track Loop Layer (Points cleanly to asset/) -->
-            <li class="tool-item"><img src="asset/tool-hubspot.jpeg" alt="HubSpot Logo"><span>HubSpot</span></li>
-            <li class="tool-item"><img src="asset/tool-google-workspace.jpeg" alt="Google Workspace Logo"><span>Google Workspace</span></li>
-            <li class="tool-item"><img src="asset/tool-zendesk.png" alt="Zendesk Logo"><span>Zendesk</span></li>
-            <li class="tool-item"><img src="asset/tool-zapier.jpeg" alt="Zapier Logo"><span>Zapier</span></li>
-            <li class="tool-item"><img src="asset/tool-monday.jpeg" alt="monday.com Logo"><span>monday.com</span></li>
-            <li class="tool-item"><img src="asset/tool-salesforce.png" alt="Salesforce Logo"><span>Salesforce</span></li>
-            <li class="tool-item"><img src="asset/tool-clickup.png" alt="ClickUp Logo"><span>ClickUp</span></li>
-            <li class="tool-item"><img src="asset/tool-zoom.jpeg" alt="Zoom Logo"><span>Zoom</span></li>
-            <li class="tool-item"><img src="asset/tool-zoho.jpeg" alt="Zoho Logo"><span>Zoho</span></li>
-            <li class="tool-item"><img src="asset/tool-github.jpeg" alt="GitHub Logo"><span>GitHub <small class="tool-learning">Scaling</small></span></li>
-            <li class="tool-item"><img src="asset/tool-canva.jpeg" alt="Canva Logo"><span>Canva</span></li>
+            <!-- First Track Loop Layer -->
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-hubspot.jpeg" alt="HubSpot Logo"><span>HubSpot</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-google-workspace.jpeg" alt="Google Workspace Logo"><span>Google Workspace</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-zendesk.png" alt="Zendesk Logo"><span>Zendesk</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-zapier.jpeg" alt="Zapier Logo"><span>Zapier</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-monday.jpeg" alt="monday.com Logo"><span>monday.com</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-salesforce.png" alt="Salesforce Logo"><span>Salesforce</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-clickup.png" alt="ClickUp Logo"><span>ClickUp</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-zoom.jpeg" alt="Zoom Logo"><span>Zoom</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-zoho.jpeg" alt="Zoho Logo"><span>Zoho</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-github.jpeg" alt="GitHub Logo"><span>GitHub <small class="tool-learning">Scaling</small></span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-canva.jpeg" alt="Canva Logo"><span>Canva</span></li>
             
             <!-- Second Duplicated Track Layer to maintain the infinite smooth motion loop -->
-            <li class="tool-item"><img src="asset/tool-hubspot.jpeg" alt="HubSpot Logo Duplicated"><span>HubSpot</span></li>
-            <li class="tool-item"><img src="asset/tool-google-workspace.jpeg" alt="Google Workspace Logo Duplicated"><span>Google Workspace</span></li>
-            <li class="tool-item"><img src="asset/tool-zendesk.png" alt="Zendesk Logo Duplicated"><span>Zendesk</span></li>
-            <li class="tool-item"><img src="asset/tool-zapier.jpeg" alt="Zapier Logo Duplicated"><span>Zapier</span></li>
-            <li class="tool-item"><img src="asset/tool-monday.jpeg" alt="monday.com Logo Duplicated"><span>monday.com</span></li>
-            <li class="tool-item"><img src="asset/tool-salesforce.png" alt="Salesforce Logo Duplicated"><span>Salesforce</span></li>
-            <li class="tool-item"><img src="asset/tool-clickup.png" alt="ClickUp Logo Duplicated"><span>ClickUp</span></li>
-            <li class="tool-item"><img src="asset/tool-zoom.jpeg" alt="Zoom Logo Duplicated"><span>Zoom</span></li>
-            <li class="tool-item"><img src="asset/tool-zoho.jpeg" alt="Zoho Logo Duplicated"><span>Zoho</span></li>
-            <li class="tool-item"><img src="asset/tool-github.jpeg" alt="GitHub Logo Duplicated"><span>GitHub <small class="tool-learning">Scaling</small></span></li>
-            <li class="tool-item"><img src="asset/tool-canva.jpeg" alt="Canva Logo Duplicated"><span>Canva</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-hubspot.jpeg" alt="HubSpot Logo Duplicated"><span>HubSpot</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-google-workspace.jpeg" alt="Google Workspace Logo Duplicated"><span>Google Workspace</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-zendesk.png" alt="Zendesk Logo Duplicated"><span>Zendesk</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-zapier.jpeg" alt="Zapier Logo Duplicated"><span>Zapier</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-monday.jpeg" alt="monday.com Logo Duplicated"><span>monday.com</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-salesforce.png" alt="Salesforce Logo Duplicated"><span>Salesforce</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-clickup.png" alt="ClickUp Logo Duplicated"><span>ClickUp</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-zoom.jpeg" alt="Zoom Logo Duplicated"><span>Zoom</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-zoho.jpeg" alt="Zoho Logo Duplicated"><span>Zoho</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-github.jpeg" alt="GitHub Logo Duplicated"><span>GitHub</span></li>
+            <li class="tool-item"><img src="{{ site.baseurl }}/asset/tool-canva.jpeg" alt="Canva Logo Duplicated"><span>Canva</span></li>
           </ul>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- FOOTER / CONTACT CALL TO ACTION -->
-    <section id="contact" class="contact-panel">
-      <h2>Let’s connect</h2>
-      <p>I’m open to scaling teams and operations within Customer Success, specialized CRM execution, and Process Optimization.</p>
-      <div class="contact-links">
-        <a class="button btn-email" href="mailto:Ogbeairbnb@gmail.com">Email Janet</a>
-        <a class="button btn-linkedin" href="https://www.linkedin.com/in/janet-crm-specialist" target="_blank" rel="noopener">Connect on LinkedIn</a>
+    <!-- SECTION 8: CONTACT ME -->
+    <div id="contact-tab" class="tab-content contact-panel">
+      <div class="portfolio-card-block">
+        <h3>Contact Me</h3>
+        <p class="block-subtitle">Let’s interface to optimize pipelines, workflows, and account portfolios</p>
+        <div class="contact-links" style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 15px;">
+          <a class="button btn-email" href="mailto:Ogbeairbnb@gmail.com">Email Janet</a>
+          <a class="button btn-linkedin" href="https://linkedin.com" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
       </div>
-    </section>
+    </div>
+
   </main>
 
-  <script src="script.js"></script>
+  <!-- REUSABLE CONTROLLER LOGIC FOR TABS -->
+  <script>
+  function openSection(evt, sectionId) {
+    var i;
+    // 1. Hide all layout sections
+    var contents = document.getElementsByClassName("tab-content");
+    for (i = 0; i < contents.length; i++) {
+      contents[i].classList.remove("active-content");
+    }
+
+    // 2. Clear out active blue status backgrounds from navigation buttons
+    var buttons = document.getElementsByClassName("tab-btn");
+    for (i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove("active");
+    }
+
+    // 3. Inject active displays to chosen targeting components
+    var targetElement = document.getElementById(sectionId);
+    if (targetElement) {
+      targetElement.classList.add("active-content");
+    }
+    if (evt && evt.currentTarget) {
+      evt.currentTarget.classList.add("active");
+    }
+
+    // Automatically rerun your external counting script if Dashboard numbers load
+    if (sectionId === 'dashboard-tab' && typeof window.triggerMetricsCounter === 'function') {
+      window.triggerMetricsCounter();
+    }
+  }
+
+  // Connect Top Navigation actions safely to Tab drawers
+  function forceTabSwitch(panelId) {
+    var buttons = document.getElementsByClassName("tab-btn");
+    for (var i = 0; i < buttons.length; i++) {
+      if(buttons[i].getAttribute('onclick').includes(panelId)) {
+        buttons[i].click();
+        break;
+      }
+    }
+  }
+  </script>
+
+  <!-- Your existing script for counting numbers/animations -->
+  <script src="{{ site.baseurl }}/script.js"></script>
 </body>
 </html>
