@@ -64,13 +64,14 @@ a { text-underline-offset: 4px; }
 .intro-profile-block { display: flex; align-items: center; gap: clamp(22px, 3vw, 42px); min-width: 0; }
 .profile-photo {
   width: clamp(120px, 16vw, 190px);
-  height: clamp(120px, 16vw, 190px);
+  max-width: 100%;
+  height: auto;
   box-sizing: border-box;
   flex: 0 0 auto;
-  object-fit: cover;
-  border: 6px solid #fff;
-  border-radius: 18px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, .24);
+  object-fit: contain;
+  border: 2px solid #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
   margin: 0;
 }
 .intro-text { min-width: 0; }
