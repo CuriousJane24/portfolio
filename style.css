@@ -720,3 +720,28 @@ body {
   background-color: #A94316;
   color: #FFFFFF;
 }  
+/* Reading area for the four case studies */
+main.case-study {
+  background: #FFF8F0;
+  color: #20383A;
+  padding: clamp(20px, 4vw, 40px);
+  border-top: 4px solid #A94316;
+  border-radius: 12px;
+}
+
+main.case-study h1,
+main.case-study h2,
+main.case-study h3 {
+  color: #103B42;
+}
+
+main.case-study p,
+main.case-study li,
+main.case-study figcaption {
+  color: #20383A;
+}
+
+main.case-study a:not(.button) {
+  color: #914018;
+  text-decoration: underline;
+}
