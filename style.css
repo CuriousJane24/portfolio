@@ -745,3 +745,28 @@ main.case-study a:not(.button) {
   color: #914018;
   text-decoration: underline;
 }
+/* Ijeoma case study reading colours */
+#ijeoma-reading {
+  background-color: #FFF8F0;
+  color: #20383A;
+  padding: clamp(20px, 4vw, 40px);
+  border-radius: 12px;
+}
+
+#ijeoma-reading :is(header, section, article) {
+  background: #FFF8F0;
+  color: #20383A;
+}
+
+#ijeoma-reading :is(h1, h2, h3) {
+  color: #103B42;
+}
+
+#ijeoma-reading :is(p, li, dt, dd, strong, figcaption) {
+  color: #20383A;
+}
+
+#ijeoma-reading a:not(.button) {
+  color: #914018;
+  text-decoration: underline;
+}
