@@ -821,3 +821,49 @@ main.case-study a:not(.button) {
   margin-bottom: 12px;
   border-radius: 8px;
 }
+.madamereal-page .case-header {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: clamp(20px, 4vw, 40px);
+  background: linear-gradient(120deg, #103B42, #205E74);
+  border-top: 4px solid #E98B54;
+  border-radius: 12px;
+  color: #FFFFFF;
+}
+
+.madamereal-page .case-header :is(h1, p, strong),
+.madamereal-page .case-meta-bar {
+  color: #FFFFFF;
+}
+
+.madamereal-page .case-header .card-badge {
+  background: #FFF1E5;
+  color: #793408;
+}
+
+.madamereal-page main.case-study,
+.madamereal-page .contact-panel {
+  background: #FFF8F0;
+  color: #20383A;
+}
+
+.madamereal-page main.case-study {
+  padding: clamp(20px, 4vw, 40px);
+  border-radius: 12px;
+}
+
+.madamereal-page main.case-study h2,
+.madamereal-page .contact-panel h2 {
+  color: #103B42;
+}
+
+.madamereal-page main.case-study :is(p, li, strong),
+.madamereal-page .contact-panel p {
+  color: #20383A;
+}
+
+.madamereal-page .tech-highlight-callout {
+  background: #F1E6D9;
+  padding: 16px;
+  border-radius: 8px;
+}
