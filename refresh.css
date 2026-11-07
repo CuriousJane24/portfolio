@@ -287,3 +287,21 @@ main { max-width: none; margin: 0; padding: 0; }
   .site-nav .nav-links { display: flex; width: 100%; }
   .site-nav .nav-links .nav-cta { width: auto; max-width: 100%; }
 }
+
+/* Hero name: keep the full name on one line with refined display typography */
+.intro .intro-text h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.2rem, 4.2vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+
+@media (max-width: 680px) {
+  .intro .intro-text h1 {
+    font-size: clamp(1.1rem, 5.8vw, 2rem);
+  }
+}
