@@ -72,35 +72,48 @@ if (toolsWindow && toolsTrack && toolsToggle) {
 }
 
 
-// The Unfolding Portfolio: reveal the existing project cards once as the section enters view.
+// The Unfolding Portfolio: robust one-time scroll reveal with a safe visible fallback.
 const projectPaper = document.querySelector("#projects .project-paper");
 const projectPaperFrame = document.querySelector("#projects .project-paper-frame");
 const projectPrefersReducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)"
 ).matches;
 
-if (
-  projectPaper &&
-  projectPaperFrame &&
-  !projectPrefersReducedMotion &&
-  "IntersectionObserver" in window
-) {
-  projectPaper.classList.add("unfold-ready");
-  projectPaper.inert = true;
+if (projectPaper && projectPaperFrame) {
+  const revealProjectPaper = () => {
+    projectPaper.classList.add("is-unrolled");
+    projectPaperFrame.classList.add("is-unrolled");
+    projectPaper.inert = false;
+  };
 
-  const projectObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        projectPaper.classList.add("is-unrolled");
-        projectPaperFrame.classList.add("is-unrolled");
-        projectPaper.inert = false;
-        observer.unobserve(entry.target);
-      }
+  if (
+    projectPrefersReducedMotion ||
+    !("IntersectionObserver" in window)
+  ) {
+    // Never hide portfolio content when motion is reduced or observers are unavailable.
+    revealProjectPaper();
+  } else {
+    projectPaper.classList.add("unfold-ready");
+    projectPaper.inert = true;
+
+    let hasRevealed = false;
+    const projectObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !hasRevealed) {
+          hasRevealed = true;
+          observer.unobserve(entry.target);
+
+          // Allow the closed-roll state to paint before starting the reveal.
+          requestAnimationFrame(() => {
+            requestAnimationFrame(revealProjectPaper);
+          });
+        }
+      });
+    }, {
+      threshold: 0.01,
+      rootMargin: "0px"
     });
-  }, {
-    threshold: 0.12,
-    rootMargin: "0px 0px -8% 0px"
-  });
 
-  projectObserver.observe(projectPaper);
+    projectObserver.observe(projectPaper);
+  }
 }
