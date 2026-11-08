@@ -70,3 +70,37 @@ if (toolsWindow && toolsTrack && toolsToggle) {
     });
   }
 }
+
+
+// The Unfolding Portfolio: reveal the existing project cards once as the section enters view.
+const projectPaper = document.querySelector("#projects .project-paper");
+const projectPaperFrame = document.querySelector("#projects .project-paper-frame");
+const projectPrefersReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+).matches;
+
+if (
+  projectPaper &&
+  projectPaperFrame &&
+  !projectPrefersReducedMotion &&
+  "IntersectionObserver" in window
+) {
+  projectPaper.classList.add("unfold-ready");
+  projectPaper.inert = true;
+
+  const projectObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        projectPaper.classList.add("is-unrolled");
+        projectPaperFrame.classList.add("is-unrolled");
+        projectPaper.inert = false;
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: "0px 0px -8% 0px"
+  });
+
+  projectObserver.observe(projectPaper);
+}
