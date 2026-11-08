@@ -72,7 +72,7 @@ if (toolsWindow && toolsTrack && toolsToggle) {
 }
 
 
-// The Unfolding Portfolio: robust one-time scroll reveal with a safe visible fallback.
+// The Unfolding Portfolio: delayed, one-time reveal with safe visible fallback.
 const projectPaper = document.querySelector("#projects .project-paper");
 const projectPaperFrame = document.querySelector("#projects .project-paper-frame");
 const projectPrefersReducedMotion = window.matchMedia(
@@ -90,7 +90,6 @@ if (projectPaper && projectPaperFrame) {
     projectPrefersReducedMotion ||
     !("IntersectionObserver" in window)
   ) {
-    // Never hide portfolio content when motion is reduced or observers are unavailable.
     revealProjectPaper();
   } else {
     projectPaper.classList.add("unfold-ready");
@@ -102,16 +101,16 @@ if (projectPaper && projectPaperFrame) {
         if (entry.isIntersecting && !hasRevealed) {
           hasRevealed = true;
           observer.unobserve(entry.target);
-
-          // Allow the closed-roll state to paint before starting the reveal.
           requestAnimationFrame(() => {
             requestAnimationFrame(revealProjectPaper);
           });
         }
       });
     }, {
-      threshold: 0.01,
-      rootMargin: "0px"
+      threshold: 0,
+      // Trigger after the paper has moved into the upper portion of the viewport,
+      // not as soon as its bottom edge first appears.
+      rootMargin: "0px 0px -45% 0px"
     });
 
     projectObserver.observe(projectPaper);
