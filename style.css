@@ -867,3 +867,21 @@ main.case-study a:not(.button) {
   padding: 16px;
   border-radius: 8px;
 }
+
+/* Tools Stack controls: animate only when JavaScript enables the marquee. */
+.tools-track {
+  animation: none;
+}
+
+.tools-window.is-animated {
+  overflow: hidden;
+}
+
+.tools-window.is-animated .tools-track {
+  animation: marqueeContinuous 25s linear infinite;
+}
+
+.tools-window.is-animated.is-paused .tools-track,
+.tools-window.is-animated:hover .tools-track {
+  animation-play-state: paused;
+}
