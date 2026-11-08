@@ -110,7 +110,7 @@ if (projectPaper && projectPaperFrame) {
       threshold: 0,
       // Trigger after the paper has moved into the upper portion of the viewport,
       // not as soon as its bottom edge first appears.
-      rootMargin: "0px 0px -45% 0px"
+      rootMargin: "0px 0px -58% 0px"
     });
 
     projectObserver.observe(projectPaper);
