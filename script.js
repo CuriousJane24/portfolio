@@ -16,8 +16,8 @@ function animateCounter(counter) {
 
     const progress = Math.min((time - startTime) / duration, 1);
     const value = Math.round(progress * target);
-
-    counter.textContent = value.toLocaleString("en-US") + "+";
+    const suffix = counter.dataset.suffix || "+";
+    counter.textContent = value.toLocaleString("en-US") + suffix;
 
     if (progress < 1) {
       requestAnimationFrame(update);
@@ -27,7 +27,12 @@ function animateCounter(counter) {
   requestAnimationFrame(update);
 }
 
-if (!reduceMotion && "IntersectionObserver" in window) {
+if (reduceMotion || !("IntersectionObserver" in window)) {
+  counters.forEach((counter) => {
+    const suffix = counter.dataset.suffix || "+";
+    counter.textContent = Number(counter.dataset.target).toLocaleString("en-US") + suffix;
+  });
+} else {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
